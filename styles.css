@@ -13,6 +13,13 @@ header, footer {
     padding: 15px;
     font-family: 'Georgia', serif;
 }
+.header {
+    background-color: #5c2f1a;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
 
 .container {
     width: 90%;
