@@ -151,12 +151,16 @@ iframe {
         font-size: 16px;
     }
     .container {
-        width: 100%;
+        width: 95%;
         padding: 10px;
     }
     .event {
-        max-width: 100%;
+        max-width: 90%;
         font-size: 14px;
+    }
+    .members{
+        align-items: center;
+        
     }
     .member img {
         width: 80px;
