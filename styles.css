@@ -128,7 +128,7 @@ iframe {
 .progress-container {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 12px;
     width: 8px;
     height: 50%;
     background: #e0e0e0;
