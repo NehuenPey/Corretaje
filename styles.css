@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -15,62 +16,67 @@ header, footer {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
 }
 
-.video-container iframe {
-    width: 100%;
-    height: 400px;
+/* Mejoras en el video responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: black;
+    margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para la línea histórica */
 .timeline-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .timeline {
     width: 4px;
     background: #3E2723;
-    height: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .event {
-    width: 90%;
-    max-width: 750px;
+    max-width: 90%;
     text-align: left;
-    background: #ffffff;
+    background: #fff;
     border-left: 4px solid #3E2723;
-    padding: 15px;
-    margin: 20px 0;
+    padding: 10px;
     border-radius: 5px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin-bottom: 15px;
 }
 
-.event.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Estilos para la sección de integrantes */
 .members {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
     justify-content: center;
-    gap: 20px;
     padding: 20px;
 }
 
 .member {
     text-align: center;
-    flex: 1 1 180px;
-    max-width: 100px;
 }
 
 .member img {
@@ -80,8 +86,18 @@ header, footer {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .container {
+        width: 95%;
+    }
     .event {
-        width: 100%;
+        max-width: 100%;
     }
 }
