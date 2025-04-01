@@ -12,7 +12,9 @@ header, footer {
     color: white;
     padding: 15px;
     font-family: 'Georgia', serif;
+    text-align: center;
 }
+
 .header {
     background-color: #5c2f1a;
     padding: 15px;
@@ -22,10 +24,10 @@ header, footer {
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 /* Mejoras en el video responsivo */
@@ -57,20 +59,43 @@ header, footer {
 }
 
 .timeline {
-    width: 4px;
+    width: 50px;
     background: #3E2723;
     height: auto;
     margin-bottom: 20px;
 }
 
 .event {
-    max-width: 90%;
-    text-align: left;
-    background: #fff;
-    border-left: 4px solid #3E2723;
-    padding: 10px;
+    position: relative;
+    margin: 20px 0;
+    padding: 15px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background: #ffffff;
+    border-left: 4px solid #3E2723;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background: #3E2723;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.5s;
+}
+
+.event.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Estilos para la sección de integrantes */
@@ -93,18 +118,48 @@ header, footer {
     object-fit: cover;
 }
 
-/* Ajustes para dispositivos pequeños */
-@media (max-width: 600px) {
+iframe {
+    width: 50%;
+    height: 50%;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Ajustes para tablets y dispositivos pequeños */
+@media (max-width: 768px) {
     h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
     h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
     .container {
         width: 95%;
     }
     .event {
+        max-width: 90%;
+    }
+}
+
+/* Ajustes para teléfonos pequeños */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .event {
         max-width: 100%;
+        font-size: 14px;
+    }
+    .member img {
+        width: 80px;
+        height: 80px;
     }
 }
