@@ -28,6 +28,13 @@ function revealOnScroll() {
         }
     });
 }
+window.addEventListener("scroll", () => {
+    revealOnScroll();
+    const progressBar = document.querySelector('.progress-bar');
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / scrollableHeight) * 100;
+    progressBar.style.height = progress + '%';
+  });
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
