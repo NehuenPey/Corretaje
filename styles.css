@@ -33,12 +33,12 @@ header, footer {
 /* Mejoras en el video responsivo */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    padding-bottom: 56.25%; /* Mantiene relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 80%;
     background: black;
-    margin-bottom: 20px;
+    margin: 20px auto;
     border-radius: 10px;
 }
 
