@@ -44,13 +44,10 @@ const eventos = [
 
 const timelineEvents = document.getElementById("timeline-events");
 const bibliographySection = document.getElementById("bibliography-list");
-
 const bibliographies = new Set();
 
 document.getElementById("btnAltoContraste").addEventListener("click", function () {
     document.body.classList.toggle("alto-contraste");
-
-    // Cambiar el fondo manualmente si no usas CSS
     if (document.body.classList.contains("alto-contraste")) {
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
@@ -59,9 +56,6 @@ document.getElementById("btnAltoContraste").addEventListener("click", function (
         document.body.style.color = "";
     }
 });
-
-
-
 
 eventos.forEach((evento) => {
     const div = document.createElement("div");
@@ -72,7 +66,6 @@ eventos.forEach((evento) => {
         <p><strong>Bibliografía:</strong> ${evento.bibliografia}</p>
     `;
     timelineEvents.appendChild(div);
-
     bibliographies.add(evento.bibliografia);
 });
 
@@ -92,13 +85,52 @@ function revealOnScroll() {
         }
     });
 }
+
 window.addEventListener("scroll", () => {
     revealOnScroll();
     const progressBar = document.querySelector('.progress-bar');
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = (window.scrollY / scrollableHeight) * 100;
     progressBar.style.height = progress + '%';
-  });
+});
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+
+// Accesibilidad: Cambio de tamaño de fuente
+document.addEventListener("DOMContentLoaded", function () {
+    const increaseBtn = document.getElementById("increase-font");
+    const decreaseBtn = document.getElementById("decrease-font");
+    const resetBtn = document.getElementById("reset-font");
+    const content = document.body;
+    
+    let fontSize = localStorage.getItem("fontSize") ? parseInt(localStorage.getItem("fontSize")) : 16;
+    const minSize = 12;
+    const maxSize = 24;
+    
+    function updateFontSize() {
+        content.style.fontSize = fontSize + "px";
+        localStorage.setItem("fontSize", fontSize);
+    }
+    
+    updateFontSize();
+    
+    increaseBtn.addEventListener("click", function () {
+        if (fontSize < maxSize) {
+            fontSize += 2;
+            updateFontSize();
+        }
+    });
+    
+    decreaseBtn.addEventListener("click", function () {
+        if (fontSize > minSize) {
+            fontSize -= 2;
+            updateFontSize();
+        }
+    });
+    
+    resetBtn.addEventListener("click", function () {
+        fontSize = 16;
+        updateFontSize();
+    });
+});

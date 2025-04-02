@@ -196,7 +196,7 @@ iframe {
     margin-right: 10px;
     font-size: 18px;
 }
-#btnAltoContraste {
+#btnAltoContraste, #increase-font, #decrease-font, #reset-font {
     background: #3E2723;
     color: white;
     border: none;
@@ -209,13 +209,13 @@ iframe {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#btnAltoContraste:hover {
+#btnAltoContraste:hover, #increase-font:hover, #decrease-font:hover, #reset-font:hover {
     background: #99431b;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-#btnAltoContraste:active {
+#btnAltoContraste:active, #increase-font:active, #decrease-font:active, #reset-font:active {
     background: #8B5A2B;
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -247,6 +247,7 @@ iframe {
 .alto-contraste h2{
     color: rgb(255, 255, 255);
 }
+
 
 /* Ajustes para tablets y dispositivos pequeños */
 @media (max-width: 768px) {
