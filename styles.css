@@ -282,7 +282,7 @@ iframe {
     }
     .event {
         max-width: 87%;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
     .bibliography-container{
         max-width: 82%;
