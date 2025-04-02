@@ -47,6 +47,22 @@ const bibliographySection = document.getElementById("bibliography-list");
 
 const bibliographies = new Set();
 
+document.getElementById("btnAltoContraste").addEventListener("click", function () {
+    document.body.classList.toggle("alto-contraste");
+
+    // Cambiar el fondo manualmente si no usas CSS
+    if (document.body.classList.contains("alto-contraste")) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    } else {
+        document.body.style.backgroundColor = "";
+        document.body.style.color = "";
+    }
+});
+
+
+
+
 eventos.forEach((evento) => {
     const div = document.createElement("div");
     div.classList.add("event");

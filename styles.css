@@ -1,10 +1,12 @@
 /* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #8B5A2B, #E0C097, #ffffff);
+    background: linear-gradient(to bottom, #8B5A2B, #E0C097);
+    
 }
 
 header, footer {
@@ -78,7 +80,7 @@ header, footer {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease, transform 0.3s ease;
-    background: #ffffff;
+    background-color: #ffffff;
     border-left: 4px solid #3E2723;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra inicial */
 }
@@ -194,7 +196,57 @@ iframe {
     margin-right: 10px;
     font-size: 18px;
 }
+#btnAltoContraste {
+    background: #3E2723;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
+#btnAltoContraste:hover {
+    background: #99431b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+#btnAltoContraste:active {
+    background: #8B5A2B;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.alto-contraste {
+    background: linear-gradient(to bottom, #a37347, #8B5A2B) !important;
+    color: rgb(255, 255, 255);
+}
+
+.alto-contraste .event {
+    background-color: #222;
+    color: white;
+}
+
+.alto-contraste .bibliography-container{
+    background-color: #222;
+    color: rgb(255, 255, 255);
+}
+.alto-contraste #bibliography-list {
+    background-color: #444;
+
+    color: rgb(255, 255, 255);
+}
+.alto-contraste .bibliography-list li{
+    color: rgb(255, 255, 255);
+    border: #2e2e2e 1px solid;
+    background-color: #222;
+}
+.alto-contraste h2{
+    color: rgb(255, 255, 255);
+}
 
 /* Ajustes para tablets y dispositivos pequeños */
 @media (max-width: 768px) {
