@@ -201,6 +201,7 @@ iframe {
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
@@ -213,6 +214,7 @@ iframe {
     background: #99431b;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 #btnAltoContraste:active, #increase-font:active, #decrease-font:active, #reset-font:active {
