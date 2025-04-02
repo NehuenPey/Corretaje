@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     let fontSize = localStorage.getItem("fontSize") ? parseInt(localStorage.getItem("fontSize")) : 16;
     const minSize = 12;
-    const maxSize = 24;
+    const maxSize = 40;
     
     function updateFontSize() {
         content.style.fontSize = fontSize + "px";
