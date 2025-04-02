@@ -1,300 +1,402 @@
 /* Estilos generales */
 
-body {
-    font-family: Arial, sans-serif;
+:root {
+    /* --- Paleta de Colores Base --- */
+    --gradient-start: #8B5A2B;
+    --gradient-end: #E0C097;
+    --primary-color: #3E2723; /* Marrón oscuro principal (Footer BG, etc) */
+    --header-bg: #5c2f1a;     /* Marrón un poco más claro (Header BG) */
+    --text-light: #ffffff;
+    --text-dark: #131010;     /* Color de texto oscuro base */
+    --card-bg: #ffffff;
+    --biblio-bg: #f8f1e7;
+    --border-color-light: #d1bfa8;
+    --progress-bg-light: #e0e0e0;
+    --button-bg: var(--primary-color); /* Botones usan color primario por defecto */
+    --button-hover-bg: #99431b;
+    --button-active-bg: var(--gradient-start);
+  
+    /* --- Paleta de Colores Alto Contraste --- */
+    --hc-gradient-start: #100d0d; /* Negro */
+    --hc-gradient-end: #3e3e3e;   /* Gris muy oscuro */
+    --hc-header-footer-bg: #2a2a2a; /* Gris oscuro para header/footer en HC */
+    --hc-primary-accent: #FFA500; /* Naranja para acentos primarios en HC */
+    --hc-text-light: #ffffff;
+    --hc-text-dark: #ffffff;     /* Texto principal siempre claro en HC */
+    --hc-card-bg: #222222;
+    --hc-biblio-bg: #222222;
+    --hc-border-color-light: #444444;
+    --hc-progress-bg-light: #555555;
+    --hc-button-bg: #333333;        /* Botones más oscuros en HC */
+    --hc-button-hover-bg: #555555;
+    --hc-button-active-bg: #777777;
+  
+    /* --- Fuentes --- */
+    --font-sans: Arial, sans-serif;
+    --font-serif: 'Georgia', serif;
+  
+    /* --- Tamaños y Espaciados --- */
+    --base-font-size: 1rem; /* = 16px por defecto (Controlado por JS) */
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --padding-small: 0.625rem; /* 10px */
+    --padding-medium: 1rem;    /* 16px */
+    --padding-large: 1.25rem;  /* 20px */
+    --border-radius-small: 5px;
+    --border-radius-medium: 10px;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    font-size: var(--base-font-size); /* Controlado por JS ahora */
     text-align: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #8B5A2B, #E0C097);
-    
-}
-
-header, footer {
-    background: #3E2723;
-    color: white;
-    padding: 15px;
-    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+    color: var(--text-dark);
+    transition: background 0.3s ease, color 0.3s ease; /* Transición suave para alto contraste */
+  }
+  
+  header, footer {
+    background: var(--primary-color); /* Footer usa primary */
+    color: var(--text-light);
+    padding: var(--padding-medium);
+    font-family: var(--font-serif);
     text-align: center;
-}
-
-.header {
-    background-color: #5c2f1a;
-    padding: 15px;
-    font-size: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .header {
+    background-color: var(--header-bg); /* Header usa su color específico */
+    padding: var(--padding-medium);
+    font-size: var(--h1-font-size);
     font-weight: bold;
-    border-radius: 0 0 10px 10px;
-}
-
-.container {
+    border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+  }
+  
+  .container {
     width: 100%;
     max-width: 95%;
     margin: auto;
-    padding: 15px;
-}
-
-/* Mejoras en el video responsivo */
-.video-container {
+    padding: var(--padding-medium);
+  }
+  
+  h1 { font-size: var(--h1-font-size); }
+  h2 { font-size: var(--h2-font-size); margin-bottom: var(--padding-medium); } /* Añadido margen a h2 */
+  
+  /* Mejoras en el video responsivo */
+  .video-container {
     position: relative;
     padding-bottom: 56.25%; /* Mantiene relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 80%;
-    background: black;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-.video-container iframe {
+    background: black; /* Mantenido negro para el contenedor */
+    margin: var(--padding-large) auto;
+    border-radius: var(--border-radius-medium);
+  }
+  
+  .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-/* Estilos para la línea histórica */
-.timeline-container {
+    border: 0; /* Quitar borde por defecto del iframe */
+  }
+  
+  /* Estilos para la línea histórica */
+  .timeline-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
-}
-
-.timeline {
-    width: 50px;
-    background: #3E2723;
-    height: auto;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #d1bfa8;
-}
-
-/* Estilos mejorados para las cartas de la línea histórica */
-.event {
+    padding: var(--padding-large) 0;
+  }
+  
+  .timeline {
+    width: 5px; /* Mantenido en px para línea fina */
+    background: var(--primary-color);
+    margin-bottom: var(--padding-large);
+    flex-shrink: 0; /* Evita que se encoja */
+  }
+  
+  /* Estilos mejorados para las cartas de la línea histórica */
+  .event {
     position: relative;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 10px;
+    margin: var(--padding-large) auto;
+    padding: var(--padding-medium);
+    border-radius: var(--border-radius-medium);
     width: 100%;
     max-width: 900px; /* Tamaño uniforme */
     text-align: left;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease, transform 0.3s ease;
-    background-color: #ffffff;
-    border-left: 4px solid #3E2723;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--text-dark); /* Hereda de body o se puede definir */
+    border-left: 4px solid var(--primary-color); /* Borde usa primary */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra inicial */
-}
-
-/* Efecto hover para resaltar la carta */
-.event:hover {
+  }
+  
+  /* Efecto hover para resaltar la carta */
+  .event:hover {
     transform: translateY(-4px); /* Ligero levantamiento */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
-}
-
-
-.event::before {
+  }
+  
+  .event::before {
     content: '';
     position: absolute;
-    left: -12px;
+    left: -12px; /* Ajustar según el grosor del borde + deseado */
     top: 50%;
-    width: 16px;
+    width: 16px; /* Usamos px para tamaño fijo del punto */
     height: 16px;
-    background: #3E2723;
+    background: var(--primary-color); /* Punto usa primary */
     border-radius: 50%;
     transform: translateY(-50%);
-    transition: background 0.5s;
-}
-
-.event.visible {
+    transition: background 0.3s ease;
+  }
+  
+  .event.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Estilos para la sección de integrantes */
-.members {
+  }
+  
+  /* Estilos para la sección de integrantes */
+  .members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
+    gap: var(--padding-medium);
     justify-content: center;
-    padding: 20px;
-}
-
-.member {
+    padding: var(--padding-large);
+  }
+  
+  .member {
     text-align: center;
-}
-
-.member img {
-    width: 100px;
+  }
+  
+  .member img {
+    width: 100px; /* Mantenido en px por ahora */
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-iframe {
-    width: 90%;
-    height: 90%;
-    min-height: 250px;
-    border-radius: 10px;
+    margin-bottom: var(--padding-small); /* Espacio bajo imagen */
+  }
+  
+  /* iframe general (además del de video) */
+  iframe {
+    border-radius: var(--border-radius-medium);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-.progress-container {
+  }
+  
+  /* Barra de progreso */
+  .progress-container {
     position: fixed;
     top: 50%;
     right: 12px;
     width: 8px;
     height: 50%;
-    background: #e0e0e0;
+    background: var(--progress-bg-light);
     border-radius: 4px;
     transform: translateY(-50%);
     z-index: 1000;
+    transition: background-color 0.3s ease;
   }
   .progress-bar {
     width: 100%;
-    height: 0%;
-    background: #3E2723;
+    height: 0%; /* Controlado por JS */
+    background: var(--primary-color); /* Barra usa primary */
     border-radius: 4px;
-    transition: height 0.3s ease;
+    transition: height 0.3s ease, background-color 0.3s ease;
   }
-
+  
   /* Estilos para la bibliografía */
   .bibliography-container {
-    background: #f8f1e7; /* Fondo suave */
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px auto; /* Centrado */
+    background: var(--biblio-bg);
+    border-radius: var(--border-radius-medium);
+    padding: var(--padding-medium);
+    margin: var(--padding-large) auto; /* Centrado */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
     max-width: 900px; /* Tamaño similar a las cartas */
     width: 90%; /* Adaptable en pantallas pequeñas */
-}
-
-.bibliography-container h2 {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .bibliography-container h2 {
     text-align: center;
-    color: #5c2f1a;
-}
-
-.bibliography-list {
+    color: var(--header-bg); /* Usando el color del header para el título aquí */
+    transition: color 0.3s ease;
+  }
+  
+  .bibliography-list {
     list-style: none;
     padding: 0;
-}
-
-.bibliography-list li {
-    font-size: 16px;
-    color: #3E2723;
-    padding: 10px;
-    border-bottom: 1px solid #d1bfa8;
+    margin: 0; /* Quitar margen por defecto de ul */
+  }
+  
+  .bibliography-list li {
+    /* font-size: 16px; --> Usa el base de body o define var(--font-size-small) */
+    color: var(--primary-color); /* Color del texto de la lista */
+    padding: var(--padding-small);
+    border-bottom: 1px solid var(--border-color-light);
     display: flex;
     align-items: center;
-}
-
-.bibliography-list li:last-child {
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .bibliography-list li:last-child {
     border-bottom: none;
-}
-
-.bibliography-list li::before {
+  }
+  
+  .bibliography-list li::before {
     content: "📖"; /* Icono de libro */
-    margin-right: 10px;
-    font-size: 18px;
-}
-#btnAltoContraste, #increase-font, #decrease-font, #reset-font {
-    background: #3E2723;
-    color: white;
+    margin-right: var(--padding-small);
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  /* Botones de Controles */
+  #btnAltoContraste, #increase-font, #decrease-font, #reset-font {
+    background: var(--button-bg);
+    color: var(--text-light);
     border: none;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
+    padding: var(--padding-small) var(--padding-large);
+    margin: 0 var(--padding-small) var(--padding-small) 0; /* Ajuste de margen */
+    /* font-size: 16px; --> Hereda de body o define variable */
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: var(--border-radius-small);
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-#btnAltoContraste:hover, #increase-font:hover, #decrease-font:hover, #reset-font:hover {
-    background: #99431b;
+  }
+  .controls { /* Contenedor para los botones de fuente */
+    margin-top: var(--padding-medium);
+  }
+  
+  #btnAltoContraste:hover, #increase-font:hover, #decrease-font:hover, #reset-font:hover {
+    background: var(--button-hover-bg);
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-
-}
-
-#btnAltoContraste:active, #increase-font:active, #decrease-font:active, #reset-font:active {
-    background: #8B5A2B;
+  }
+  
+  #btnAltoContraste:active, #increase-font:active, #decrease-font:active, #reset-font:active {
+    background: var(--button-active-bg);
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.alto-contraste {
-    background: linear-gradient(to bottom, #a37347, #8B5A2B) !important;
-    color: rgb(255, 255, 255);
-}
-
-.alto-contraste .event {
-    background-color: #222;
-    color: white;
-}
-
-.alto-contraste .bibliography-container{
-    background-color: #222;
-    color: rgb(255, 255, 255);
-}
-.alto-contraste #bibliography-list {
-    background-color: #444;
-
-    color: rgb(255, 255, 255);
-}
-.alto-contraste .bibliography-list li{
-    color: rgb(255, 255, 255);
-    border: #2e2e2e 1px solid;
-    background-color: #222;
-}
-.alto-contraste h2{
-    color: rgb(255, 255, 255);
-}
-
-
-/* Ajustes para tablets y dispositivos pequeños */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 20px;
+  }
+  
+  /* Estilo de Foco para Accesibilidad */
+  *:focus-visible { /* Usa :focus-visible para mostrar solo en navegación por teclado */
+    outline: 3px solid var(--hc-primary-accent); /* Usa el acento naranja */
+    outline-offset: 2px;
+  }
+  
+  
+  /* --- MODO ALTO CONTRASTE --- */
+  /* Redefinimos las variables dentro del scope .alto-contraste */
+  .alto-contraste {
+    /* --- Variables Generales --- */
+    --gradient-start: var(--hc-gradient-start, #000000);
+    --gradient-end: var(--hc-gradient-end, #1a1a1a);
+    --text-light: var(--hc-text-light, #ffffff);
+    --text-dark: var(--hc-text-dark, #ffffff); /* Texto principal claro */
+    --border-color-light: var(--hc-border-color-light, #444444);
+  
+    /* --- Header y Footer Específico --- */
+    --primary-color: var(--hc-header-footer-bg); /* Footer BG (Gris oscuro) */
+    --header-bg: var(--hc-header-footer-bg);     /* Header BG (Gris oscuro) */
+  
+    /* --- Componentes --- */
+    --card-bg: var(--hc-card-bg, #222222);
+    --biblio-bg: var(--hc-biblio-bg, #222222);
+    --progress-bg-light: var(--hc-progress-bg-light, #555555);
+  
+    /* --- Botones --- */
+    --button-bg: var(--hc-button-bg, #333333);
+    --button-hover-bg: var(--hc-button-hover-bg, #555555);
+    --button-active-bg: var(--hc-button-active-bg, #777777);
+  
+    /* --- Acentos (Naranja) --- */
+    --accent-color: var(--hc-primary-accent); /* Variable genérica para acentos */
+  }
+  
+  /* Aplicamos el color de acento donde se necesite en HC */
+  .alto-contraste .event {
+     border-left-color: var(--accent-color);
+  }
+  .alto-contraste .event::before {
+    background: var(--accent-color);
+  }
+  .alto-contraste .progress-bar {
+    background: var(--accent-color);
+  }
+  .alto-contraste .bibliography-container h2 {
+    color: var(--accent-color);
+  }
+  .alto-contraste .bibliography-list li {
+    color: var(--text-light); /* Texto de items biblio claro */
+    border-bottom-color: var(--border-color-light);
+    background-color: var(--hc-card-bg); /* Fondo igual que las cards */
+  }
+  
+  
+  /* --- Media Queries --- */
+  /* Ajustes para tablets y dispositivos pequeños */
+  @media (max-width: 768px) {
+    :root { /* Redefinir tamaños base si es necesario */
+      --h1-font-size: 1.5rem; /* 24px */
+      --h2-font-size: 1.25rem; /* 20px */
     }
     .container {
-        width: 95%;
+      width: 95%;
     }
     .event {
-        max-width: 90%;
+      max-width: 90%;
     }
     .bibliography-container{
-        max-width: 85%;
+      max-width: 85%;
     }
-}
-
-/* Ajustes para teléfonos pequeños */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 18px;
-    }
-    h2 {
-        font-size: 16px;
+  }
+  
+  /* Ajustes para teléfonos pequeños */
+  @media (max-width: 480px) {
+    :root {
+      --h1-font-size: 1.125rem; /* 18px */
+      --h2-font-size: 1rem; /* 16px */
     }
     .container {
-        width: 90%;
-        padding: 10px;
+      width: 100%; /* Ocupar todo el ancho */
+      max-width: 100%;
+      padding-left: var(--padding-small);
+      padding-right: var(--padding-small);
+      box-sizing: border-box; /* Incluir padding en el ancho */
     }
     .event {
-        max-width: 87%;
-        /* font-size: 14px; */
+       max-width: none; /* Permitir que ocupe el ancho del container */
+       width: auto; /* Ajustar ancho automáticamente */
+       margin-left: var(--padding-medium); /* Margen para espacio de la línea */
+       margin-right: var(--padding-small);
     }
+     .event::before {
+       left: -20px; /* Ajustar posición del punto */
+     }
     .bibliography-container{
-        max-width: 82%;
+       max-width: none;
+       width: auto;
+       margin-left: var(--padding-small);
+       margin-right: var(--padding-small);
     }
-    .members{
-        align-items: center;
-        
+    .members {
+       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Columnas más pequeñas */
+       gap: var(--padding-small);
     }
     .member img {
-        width: 80px;
-        height: 80px;
+      width: 80px;
+      height: 80px;
     }
-}
+    .controls button { /* Hacer botones más adaptables */
+      padding: var(--padding-small) var(--padding-medium);
+      font-size: 0.9rem;
+    }
+    .progress-container { display: none; } /* Ocultar barra de progreso */
+  }
