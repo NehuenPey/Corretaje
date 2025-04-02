@@ -63,22 +63,32 @@ header, footer {
     background: #3E2723;
     height: auto;
     margin-bottom: 20px;
+    border-bottom: 1px solid #d1bfa8;
 }
 
+/* Estilos mejorados para las cartas de la línea histórica */
 .event {
     position: relative;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100%;
-    max-width: 900px;
+    max-width: 900px; /* Tamaño uniforme */
     text-align: left;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease, transform 0.3s ease;
     background: #ffffff;
     border-left: 4px solid #3E2723;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra inicial */
 }
+
+/* Efecto hover para resaltar la carta */
+.event:hover {
+    transform: translateY(-4px); /* Ligero levantamiento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
 
 .event::before {
     content: '';
@@ -119,8 +129,8 @@ header, footer {
 }
 
 iframe {
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 90%;
     min-height: 250px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -144,6 +154,48 @@ iframe {
     transition: height 0.3s ease;
   }
 
+  /* Estilos para la bibliografía */
+  .bibliography-container {
+    background: #f8f1e7; /* Fondo suave */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto; /* Centrado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 900px; /* Tamaño similar a las cartas */
+    width: 90%; /* Adaptable en pantallas pequeñas */
+}
+
+.bibliography-container h2 {
+    text-align: center;
+    color: #5c2f1a;
+}
+
+.bibliography-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bibliography-list li {
+    font-size: 16px;
+    color: #3E2723;
+    padding: 10px;
+    border-bottom: 1px solid #d1bfa8;
+    display: flex;
+    align-items: center;
+}
+
+.bibliography-list li:last-child {
+    border-bottom: none;
+}
+
+.bibliography-list li::before {
+    content: "📖"; /* Icono de libro */
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
 /* Ajustes para tablets y dispositivos pequeños */
 @media (max-width: 768px) {
     h1 {
@@ -157,6 +209,9 @@ iframe {
     }
     .event {
         max-width: 90%;
+    }
+    .bibliography-container{
+        max-width: 85%;
     }
 }
 
@@ -175,6 +230,9 @@ iframe {
     .event {
         max-width: 87%;
         font-size: 14px;
+    }
+    .bibliography-container{
+        max-width: 82%;
     }
     .members{
         align-items: center;
