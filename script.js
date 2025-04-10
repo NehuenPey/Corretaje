@@ -46,18 +46,23 @@ const timelineEvents = document.getElementById("timeline-events");
 const bibliographySection = document.getElementById("bibliography-list");
 const bibliographies = new Set();
 
-document.getElementById("btnAltoContraste").addEventListener("click", function () {
-    document.body.classList.toggle("alto-contraste");
-    if (document.body.classList.contains("alto-contraste")) {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-    } else {
-        document.body.style.backgroundColor = "";
-        document.body.style.color = "";
-    }
-});
+function toggleContraste() {
+    const body = document.body;
+    const isActive = body.classList.toggle("alto-contraste");
 
-eventos.forEach((evento) => {
+    if (isActive) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+        localStorage.setItem("modoAltoContraste", "true");
+    } else {
+        body.style.backgroundColor = "";
+        body.style.color = "";
+        localStorage.removeItem("modoAltoContraste");
+    }
+}
+
+
+function crearEvento(evento) {
     const div = document.createElement("div");
     div.classList.add("event");
     div.innerHTML = `
@@ -65,19 +70,29 @@ eventos.forEach((evento) => {
         <p>${evento.texto}</p>
         <p><strong>Bibliografía:</strong> ${evento.bibliografia}</p>
     `;
-    timelineEvents.appendChild(div);
-    bibliographies.add(evento.bibliografia);
-});
+    return div;
+}
 
-bibliographies.forEach((biblio) => {
-    const li = document.createElement("li");
-    li.textContent = biblio;
-    bibliographySection.appendChild(li);
-});
+function renderizarEventos() {
+    eventos.forEach(evento => {
+        const div = crearEvento(evento);
+        timelineEvents.appendChild(div);
+        bibliographies.add(evento.bibliografia);
+    });
+}
+
+function renderizarBibliografias() {
+    bibliographies.forEach(biblio => {
+        const li = document.createElement("li");
+        li.textContent = biblio;
+        bibliographySection.appendChild(li);
+    });
+}
 
 function revealOnScroll() {
     const elements = document.querySelectorAll(".event");
     const windowHeight = window.innerHeight;
+
     elements.forEach(el => {
         const position = el.getBoundingClientRect().top;
         if (position < windowHeight * 0.8) {
@@ -86,51 +101,70 @@ function revealOnScroll() {
     });
 }
 
-window.addEventListener("scroll", () => {
-    revealOnScroll();
+function actualizarBarraProgreso() {
     const progressBar = document.querySelector('.progress-bar');
     const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
     const progress = (window.scrollY / scrollableHeight) * 100;
-    progressBar.style.height = progress + '%';
-});
+    progressBar.style.height = `${progress}%`;
+}
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+function manejarScroll() {
+    revealOnScroll();
+    actualizarBarraProgreso();
+}
 
-// Accesibilidad: Cambio de tamaño de fuente
-document.addEventListener("DOMContentLoaded", function () {
+function configurarAccesibilidad() {
     const increaseBtn = document.getElementById("increase-font");
     const decreaseBtn = document.getElementById("decrease-font");
     const resetBtn = document.getElementById("reset-font");
-    const content = document.body;
-    
-    let fontSize = localStorage.getItem("fontSize") ? parseInt(localStorage.getItem("fontSize")) : 16;
+
+    let fontSize = parseInt(localStorage.getItem("fontSize")) || 16;
     const minSize = 12;
     const maxSize = 40;
-    
-    function updateFontSize() {
-        content.style.fontSize = fontSize + "px";
+
+    const aplicarTamañoFuente = () => {
+        document.body.style.fontSize = `${fontSize}px`;
         localStorage.setItem("fontSize", fontSize);
-    }
-    
-    updateFontSize();
-    
-    increaseBtn.addEventListener("click", function () {
+    };
+
+    increaseBtn.addEventListener("click", () => {
         if (fontSize < maxSize) {
             fontSize += 2;
-            updateFontSize();
+            aplicarTamañoFuente();
         }
     });
-    
-    decreaseBtn.addEventListener("click", function () {
+
+    decreaseBtn.addEventListener("click", () => {
         if (fontSize > minSize) {
             fontSize -= 2;
-            updateFontSize();
+            aplicarTamañoFuente();
         }
     });
-    
-    resetBtn.addEventListener("click", function () {
+
+    resetBtn.addEventListener("click", () => {
         fontSize = 16;
-        updateFontSize();
+        aplicarTamañoFuente();
     });
+
+    aplicarTamañoFuente();
+}
+
+// Inicialización
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("btnAltoContraste").addEventListener("click", toggleContraste);
+    
+    // Aplicar alto contraste si estaba activado
+    if (localStorage.getItem("modoAltoContraste") === "true") {
+        document.body.classList.add("alto-contraste");
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+
+    renderizarEventos();
+    renderizarBibliografias();
+    configurarAccesibilidad();
+    revealOnScroll(); // Mostrar al cargar
 });
+
+// Scroll
+window.addEventListener("scroll", manejarScroll);

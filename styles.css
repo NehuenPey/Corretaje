@@ -124,6 +124,7 @@
   .event {
     position: relative;
     margin: var(--padding-large) auto;
+    margin-bottom: 70px;
     padding: var(--padding-medium);
     border-radius: var(--border-radius-medium);
     width: 100%;
@@ -343,20 +344,58 @@
   /* --- Media Queries --- */
   /* Ajustes para tablets y dispositivos pequeños */
   @media (max-width: 768px) {
-    :root { /* Redefinir tamaños base si es necesario */
-      --h1-font-size: 1.5rem; /* 24px */
-      --h2-font-size: 1.25rem; /* 20px */
+    body {
+      font-size: 0.95rem;
     }
+  
+    .header {
+      font-size: 1.5rem;
+      padding: var(--padding-small);
+    }
+  
+    h1, h2 {
+      font-size: 1.2rem;
+    }
+  
     .container {
-      width: 95%;
+      padding: var(--padding-small);
     }
-    .event {
+  
+    .video-container {
+      max-width: 100%;
+      padding-bottom: 56.25%;
+    }
+  
+    .members {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .member {
+      width: 45%;
+      margin-bottom: var(--padding-small);
+    }
+  
+    .member img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin: 1rem auto;
       max-width: 90%;
     }
-    .bibliography-container{
-      max-width: 85%;
+  
+    .controls button {
+      padding: 0.6rem;
+      font-size: 0.9rem;
     }
   }
+  
   
   /* Ajustes para teléfonos pequeños */
   @media (max-width: 480px) {
