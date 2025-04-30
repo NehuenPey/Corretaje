@@ -166,25 +166,25 @@ const preguntas = [
     document.getElementById("pregunta").style.display = "none";
     document.getElementById("resultado").style.display = "block";
     document.getElementById("puntajeFinal").textContent = `${nombreJugador}, tu puntaje final es de: ${puntaje}/10`;
-    guardarPuntaje(nombreJugador, puntaje);
-    // mostrarRanking();
+  
+    const gifContenedor = document.getElementById("gifResultado");
+    let gifRuta = "";
+
+    if (puntaje <= 5) {
+      gifRuta = "img/0a5.gif";
+    } else if (puntaje <= 8) {
+      gifRuta = "img/6a8.gif";
+    } else if (puntaje === 9) {
+      gifRuta = "img/9.gif";
+    } else if (puntaje === 10) {
+      gifRuta = "img/10.gif";
+    }
+    
+
+  gifContenedor.innerHTML = `<img src="${gifRuta}" alt="Resultado" style="max-width: 100%; height: auto;">`;
+  console.log("Ruta del gif seleccionada:", gifRuta);
+
   }
   
-  function guardarPuntaje(nombre, puntos) {
-    // const ranking = JSON.parse(localStorage.getItem("rankingTrivia")) || [];
-    ranking.push({ nombre, puntos });
-    ranking.sort((a, b) => b.puntos - a.puntos);
-    // localStorage.setItem("rankingTrivia", JSON.stringify(ranking.slice(0, 5)));
-  }
-  
-//   function mostrarRanking() {
-//     const ranking = JSON.parse(localStorage.getItem("rankingTrivia")) || [];
-//     const ul = document.getElementById("ranking");
-//     ul.innerHTML = "";
-//     ranking.forEach(r => {
-//       const li = document.createElement("li");
-//       li.textContent = `${r.nombre}: ${r.puntos}/10`;
-//       ul.appendChild(li);
-//     });
-//   }
+
   

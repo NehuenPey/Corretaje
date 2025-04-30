@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio FPP</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    canvas {
+      border: 1px solid #333;
+      margin-bottom: 15px;
+    }
+
+    #resultado {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    #enunciado {
+      font-size: 20px;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>¿Está el punto dentro, sobre o fuera de la FPP?</h2>
+  
+  <div id="enunciado">
+    Ubicá un punto en el gráfico que represente una <u>producción ineficiente</u> (dentro de la FPP).
+  </div>
+
+  <canvas id="grafico" width="500" height="500"></canvas>
+  <div id="resultado">Haz clic en el gráfico para ubicar el punto.</div>
+
+  <script>
+    const canvas = document.getElementById("grafico");
+    const ctx = canvas.getContext("2d");
+    const resultado = document.getElementById("resultado");
+
+    const ancho = canvas.width;
+    const alto = canvas.height;
+    const margen = 40;
+    const escala = (ancho - 2 * margen) / 10;
+
+    const puntosFPP = [
+      { x: 0, y: 10 },
+      { x: 2, y: 9 },
+      { x: 4, y: 7 },
+      { x: 6, y: 4 },
+      { x: 8, y: 2 },
+      { x: 10, y: 0 },
+    ];
+
+    function unidadAPixel(x, y) {
+      return {
+        px: margen + x * escala,
+        py: alto - (margen + y * escala)
+      };
+    }
+
+    function dibujarFPP() {
+      ctx.clearRect(0, 0, ancho, alto);
+      ctx.beginPath();
+      ctx.moveTo(margen, alto - margen);
+      ctx.lineTo(ancho - margen, alto - margen); // Eje X
+      ctx.moveTo(margen, alto - margen);
+      ctx.lineTo(margen, margen); // Eje Y
+      ctx.stroke();
+
+      ctx.font = "12px Arial";
+      ctx.fillText("Alimentos (X)", ancho / 2, alto - 10);
+      ctx.fillText("Robots (Y)", 10, margen - 10);
+
+      ctx.beginPath();
+      puntosFPP.forEach((p, i) => {
+        const { px, py } = unidadAPixel(p.x, p.y);
+        if (i === 0) {
+          ctx.moveTo(px, py);
+        } else {
+          ctx.lineTo(px, py);
+        }
+      });
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    function verificarPosicion(x, y) {
+      for (let i = 0; i < puntosFPP.length - 1; i++) {
+        const p1 = puntosFPP[i];
+        const p2 = puntosFPP[i + 1];
+        if (x >= p1.x && x <= p2.x) {
+          const pendiente = (p2.y - p1.y) / (p2.x - p1.x);
+          const yInterpolado = p1.y + pendiente * (x - p1.x);
+
+          if (Math.abs(y - yInterpolado) < 0.2) return "sobre la FPP (eficiente)";
+          else if (y < yInterpolado) return "dentro de la FPP (ineficiente)";
+          else return "fuera de la FPP (inaccesible)";
+        }
+      }
+      return "fuera del rango de análisis";
+    }
+
+    canvas.addEventListener("click", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const xPixel = e.clientX - rect.left;
+      const yPixel = e.clientY - rect.top;
+
+      const x = (xPixel - margen) / escala;
+      const y = (alto - yPixel - margen) / escala;
+
+      dibujarFPP();
+      const { px, py } = unidadAPixel(x, y);
+      ctx.beginPath();
+      ctx.arc(px, py, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = "red";
+      ctx.fill();
+
+      const estado = verificarPosicion(x, y);
+      resultado.textContent = `Ubicaste el punto (${x.toFixed(1)}, ${y.toFixed(1)}): está ${estado}.`;
+    });
+
+    dibujarFPP();
+  </script>
+</body>
+</html>
