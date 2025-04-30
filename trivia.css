@@ -1,0 +1,48 @@
+
+
+  @media (max-width: 480px) {
+    .trivia-box {
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .btn, .grid-opciones button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    input[type="text"] {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  /* Tablets (>= 600px) */
+  @media (min-width: 600px) {
+    .grid-opciones {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .trivia-box {
+      max-width: 500px;
+    }
+  }
+  
+  /* Pantallas grandes (>= 1024px) */
+  @media (min-width: 1024px) {
+    .grid-opciones {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+  
+    .trivia-box {
+      max-width: 600px;
+      padding: 2.5rem;
+    }
+  
+    .btn {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
