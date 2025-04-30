@@ -1,48 +1,110 @@
+/* Estilos base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #c38e5e, #f0cfa0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.trivia-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
 
 
-  @media (max-width: 480px) {
-    .trivia-box {
-      padding: 1rem;
-      border-radius: 8px;
-    }
-  
-    .btn, .grid-opciones button {
-      font-size: 0.9rem;
-      padding: 0.6rem;
-    }
-  
-    input[type="text"] {
-      font-size: 0.9rem;
-    }
+/* Opciones base */
+.grid-opciones {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.grid-opciones button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.grid-opciones button:hover {
+  background-color: #eee;
+}
+
+.btn {
+  margin-top: 1.2rem;
+  background-color: #4d1f00;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Smartphones (≤480px) */
+@media (max-width: 480px) {
+  .trivia-box {
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-height: 70vh;
   }
-  
-  
-  /* Tablets (>= 600px) */
-  @media (min-width: 600px) {
-    .grid-opciones {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .trivia-box {
-      max-width: 500px;
-    }
+
+  .grid-opciones {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem;
   }
-  
-  /* Pantallas grandes (>= 1024px) */
-  @media (min-width: 1024px) {
-    .grid-opciones {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem;
-    }
-  
-    .trivia-box {
-      max-width: 600px;
-      padding: 2.5rem;
-    }
-  
-    .btn {
-      font-size: 1.1rem;
-      padding: 1rem 2rem;
-    }
+
+  .btn,
+  .grid-opciones button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
-  
+
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (≥600px) */
+@media (min-width: 600px) {
+  .grid-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trivia-box {
+    max-width: 500px;
+  }
+}
+
+/* Pantallas grandes (≥1024px) */
+@media (min-width: 1024px) {
+  .grid-opciones {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .trivia-box {
+    max-width: 600px;
+    padding: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}

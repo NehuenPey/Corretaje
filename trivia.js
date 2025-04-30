@@ -185,6 +185,3 @@ const preguntas = [
   console.log("Ruta del gif seleccionada:", gifRuta);
 
   }
-  
-
-  
