@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia</title>
+  <link rel="shortcut icon" href="img/key.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container2">
+    <div id="inicio" class="trivia-box">
+      <h2>Ingrese su nombre</h2>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+      <br>
+      <button class="btn" onclick="comenzarTrivia()">Comenzar</button>
+      <a href="index.html" class="volver">← Volver al inicio</a>
+    </div>
+
+    <div id="pregunta" class="trivia-box" style="display: none;">
+      <h3 id="textoPregunta"></h3>
+      <div id="opciones-container" class="grid-opciones"></div>
+      <button class="btn" onclick="siguientePregunta()">Siguiente</button>
+    </div>
+
+    <div id="resultado" class="trivia-box" style="display: none;">
+      <h2>Juego terminado</h2>
+      <p id="puntajeFinal"></p>
+      <!-- <h3>Top 5 Puntuaciones</h3>
+      <ul id="ranking"></ul> -->
+      <button class="btn" onclick="location.reload()">Jugar otra vez</button>
+      <a href="index.html" class="volver">← Volver al inicio</a>
+    </div>
+  </div>
+
+  <script src="trivia.js"></script>
+</body>
+</html>

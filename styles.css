@@ -257,7 +257,7 @@
   }
   
   /* Botones de Controles */
-  #btnAltoContraste, #increase-font, #decrease-font, #reset-font {
+  #btnAltoContraste, #increase-font, #decrease-font, #reset-font, #btn-trivia{
     background: var(--button-bg);
     color: var(--text-light);
     border: none;
@@ -339,8 +339,69 @@
     border-bottom-color: var(--border-color-light);
     background-color: var(--hc-card-bg); /* Fondo igual que las cards */
   }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
   
+  .trivia-box {
+    background: #c2bfbe82;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
   
+  .btn {
+    background-color: #3E2723;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #5c2f1a;
+  }
+  
+  .volver {
+    color: #5c2f1a;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .grid-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+    justify-items: center;
+  }
+  
+  .grid-opciones button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #eee;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .grid-opciones button:hover {
+    background-color: #ccc;
+  }
+    
   /* --- Media Queries --- */
   /* Ajustes para tablets y dispositivos pequeños */
   @media (max-width: 768px) {
