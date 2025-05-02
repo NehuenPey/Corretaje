@@ -149,6 +149,7 @@ function configurarAccesibilidad() {
     aplicarTamañoFuente();
 }
 
+
 // Inicialización
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btnAltoContraste").addEventListener("click", toggleContraste);
