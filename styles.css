@@ -460,7 +460,71 @@
       font-size: 0.9rem;
     }
   }
+  #conociendo-guías {
+    text-align: center;
+    margin-top: 50px;
+  }
   
+  .guia-card {
+    display: inline-block;
+    width: 150px;
+    margin: 15px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .guia-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .guia-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .guia-card h3 {
+    margin-top: 10px;
+  }
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .modal-content {
+    background-color: #E0C097;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
   
   /* Ajustes para teléfonos pequeños */
   @media (max-width: 480px) {

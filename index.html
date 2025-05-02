@@ -11,7 +11,7 @@
     <header class="header">
         <h1>Línea Histórica del Corredor Inmobiliario</h1>
         <button id="btn-trivia" class="btn-trivia" onclick="location.href='trivia.html'">🎮 Jugar Trivia</button>
-        <button id="btn-trivia" class="btn-trivia" onclick="location.href='FPP.html'">FPP</button>
+        <!-- <button id="btn-trivia" class="btn-trivia" onclick="location.href='FPP.html'">FPP</button> -->
         <button id="btnAltoContraste">Modo Oscuro</button>
     </header>
 
@@ -44,6 +44,44 @@
             <div id="timeline-events"></div>
         </div>
     </section>
+    <hr>
+    <section id="conociendo-guías">
+        <h2>Conociendo a los Guías</h2>
+        <div class="guia-card" onclick="abrirModal('guia1')">
+          <img src="img/Lupita.jpg" alt="Guía 1">
+          <h3>Lupita</h3>
+        </div>
+        <!-- <div class="guia-card" onclick="abrirModal('guia2')">
+          <img src="img/LeliaNeto.jpg" alt="Guía 2">
+          <h3>katas</h3>
+        </div>
+        <div class="guia-card" onclick="abrirModal('guia3')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div>
+          <div class="guia-card" onclick="abrirModal('guia4')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div>
+          <div class="guia-card" onclick="abrirModal('guia5')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div>
+          <div class="guia-card" onclick="abrirModal('guia6')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div>
+          <div class="guia-card" onclick="abrirModal('guia7')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div>
+          <div class="guia-card" onclick="abrirModal('guia8')">
+            <img src="img/LeliaNeto.jpg" alt="Guía 2">
+            <h3>katas</h3>
+          </div> -->
+        <!-- Más guías -->
+      </section>
+      <hr>
     <section class="container bibliography-container">
         <h2>Bibliografía General</h2>
         <p>Lista de fuentes utilizadas para la elaboración de esta línea histórica:</p>
@@ -59,7 +97,7 @@
                 <p>Melisa Provenzano</p>
             </div>
             <div class="member">
-                <img src="img/user-2935527_1280.webp" alt="Img2" loading="lazy">
+                <img src="img/Alejandra.jpg" alt="Img2" loading="lazy">
                 <p>Alejandra de la Peña</p>
             </div>
             <div class="member">
@@ -95,6 +133,15 @@
         <p>Facultad de Derecho - Universidad Nacional de Rosario</p>
         <p>Licenciatura en Corretaje Inmobiliario 2025</p>
     </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="cerrarModal()">&times;</span>
+          <h2 id="modal-title">Nombre del Guía</h2>
+          <!-- <img id="modal-img" src="" alt="Guía"> -->
+          <p id="modal-description">Descripción del guía espiritual...</p>
+        </div>
+      </div>
+      
     <script src="script.js"></script>
 </body>
 </html>
