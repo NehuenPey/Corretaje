@@ -344,6 +344,14 @@
     border-bottom-color: var(--border-color-light);
     background-color: var(--hc-card-bg); /* Fondo igual que las cards */
   }
+  .alto-contraste .modal {
+    background: var(--accent-color);
+}
+
+/* Aumenta el contraste de la imagen del modal si es necesario */
+  .alto-contraste .modal img {
+    filter: brightness(0.9) contrast(1.2);
+}
   .container2 {
     display: flex;
     flex-direction: column;
