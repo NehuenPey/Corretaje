@@ -160,18 +160,21 @@ function abrirModal(guia) {
       modalTitle.innerText = "Lupita";
       modalImg.src = "img/Lupita.jpg";
       modalDescription.innerText = "Descripción detallada del Guía 1... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
-    } else if (guia === 'guia2') {
+    } 
+    else if (guia === 'guia2') {
       modalTitle.innerText = "Modalita";
       modalImg.src = "img/Domitila.jpg";
       modalDescription.innerText = "Descripción detallada del Guía 2... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
-    }else if (guia === 'guia3') {
+    }
+    else if (guia === 'guia3') {
         modalTitle.innerText = "Sir Henry";
         modalImg.src = "img/SirHenry.jpg";
         modalDescription.innerText = "Descripción detallada del Guía 3... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
-      }else if (guia === 'guia4') {
+      }
+      else if (guia === 'guia4') {
       modalTitle.innerText = "Damian";
       modalImg.src = "img/Damian.jpg";
-      modalDescription.innerText = "Descripción detallada del Guía 2... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
+      modalDescription.innerText = "Descripción detallada del Guía 4... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
       }
     // else if (guia === 'guia5') {
     //     modalTitle.innerText = "Sir Henry";
