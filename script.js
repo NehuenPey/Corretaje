@@ -153,6 +153,7 @@ function abrirModal(guia) {
     const modalTitle = document.getElementById("modal-title");
     const modalImg = document.getElementById("modal-img");
     const modalDescription = document.getElementById("modal-description");
+    document.body.classList.add('modal-open');
   
     // Cambiar la información del modal según el guía seleccionado
     if (guia === 'guia1') {
@@ -191,6 +192,7 @@ function abrirModal(guia) {
   function cerrarModal() {
     const modal = document.getElementById("modal");
     modal.style.display = "none"; // Cerrar el modal
+    document.body.classList.remove('modal-open');
   }
   
 

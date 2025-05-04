@@ -490,9 +490,12 @@
   .modal-content {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    align-items: flex-start;
+    gap: 20px; /* Añade separación entre imagen e info */
+    padding: 20px; /* Separación interna */
+    align-items: center;
+    flex-wrap: wrap; /* para que sea responsive también */
   }
+  
   .modal-image img {
     max-width: 250px;
     max-height: 300px;
@@ -521,11 +524,17 @@
     cursor: pointer;
   }
     
+  body.modal-open {
+    overflow: hidden;
+  }
   /* --- Media Queries --- */
   /* Ajustes para tablets y dispositivos pequeños */
   @media (max-width: 768px) {
     body {
       font-size: 0.95rem;
+    }
+    #modal{
+      width: 480px;
     }
   
     .header {
@@ -580,6 +589,9 @@
     }
   }
   @media (max-width: 600px) {
+    #modal{
+      width: 400px;
+    }
     .modal-content {
       flex-direction: column;
       align-items: center;
@@ -611,6 +623,9 @@
     :root {
       --h1-font-size: 1.125rem; /* 18px */
       --h2-font-size: 1rem; /* 16px */
+    }
+    #modal{
+      width: 280px;
     }
     .container {
       width: 100%; /* Ocupar todo el ancho */
