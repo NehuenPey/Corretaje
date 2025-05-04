@@ -182,6 +182,10 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: var(--padding-small); /* Espacio bajo imagen */
+    transition: transform 0.3s ease;
+  }
+  .member img:hover {
+    transform: scale(1.2);
   }
   
   /* iframe general (además del de video) */
