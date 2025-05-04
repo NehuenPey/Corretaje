@@ -51,35 +51,30 @@
           <img src="img/Lupita.jpg" alt="Guía 1">
           <h3>Lupita</h3>
         </div>
-        <!-- <div class="guia-card" onclick="abrirModal('guia2')">
-          <img src="img/LeliaNeto.jpg" alt="Guía 2">
-          <h3>katas</h3>
+        <div class="guia-card" onclick="abrirModal('guia2')">
+          <img src="img/Domitila.jpg" alt="Guía 2">
+          <h3>Domitila</h3>
         </div>
         <div class="guia-card" onclick="abrirModal('guia3')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div>
-          <div class="guia-card" onclick="abrirModal('guia4')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div>
-          <div class="guia-card" onclick="abrirModal('guia5')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div>
-          <div class="guia-card" onclick="abrirModal('guia6')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div>
-          <div class="guia-card" onclick="abrirModal('guia7')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div>
-          <div class="guia-card" onclick="abrirModal('guia8')">
-            <img src="img/LeliaNeto.jpg" alt="Guía 2">
-            <h3>katas</h3>
-          </div> -->
-        <!-- Más guías -->
+          <img src="img/SirHenry.jpg" alt="Guía 3">
+          <h3>Sir Henry</h3>
+        </div>
+        <!-- <div class="guia-card" onclick="abrirModal('guia4')">
+          <img src="img/Lupita.jpg" alt="Guía 4">
+          <h3>Lupita</h3>
+        </div>
+        <div class="guia-card" onclick="abrirModal('guia5')">
+          <img src="img/Domitila.jpg" alt="Guía 5">
+          <h3>Domitila</h3>
+        </div>
+        <div class="guia-card" onclick="abrirModal('guia6')">
+          <img src="img/SirHenry.jpg" alt="Guía 6">
+          <h3>Sir Henry</h3>
+        </div>
+        <div class="guia-card" onclick="abrirModal('guia7')">
+          <img src="img/Lupita.jpg" alt="Guía 7">
+          <h3>Lupita</h3>
+        </div> -->
       </section>
       <hr>
     <section class="container bibliography-container">
@@ -129,14 +124,19 @@
         <p>Facultad de Derecho - Universidad Nacional de Rosario</p>
         <p>Licenciatura en Corretaje Inmobiliario 2025</p>
     </footer>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="cerrarModal()">&times;</span>
-          <h2 id="modal-title">Nombre del Guía</h2>
-          <!-- <img id="modal-img" src="" alt="Guía"> -->
-          <p id="modal-description">Descripción del guía espiritual...</p>
+    <div id="modal">
+      <button id="modal-close" onclick="cerrarModal()">✖</button>
+      <div class="modal-content">
+        <div class="modal-image">
+          <img id="modal-img" src="" alt="Imagen del guía" />
+        </div>
+        <div class="modal-text">
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
         </div>
       </div>
+    </div>
+    
       
     <script src="script.js"></script>
 </body>
