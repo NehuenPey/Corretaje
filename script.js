@@ -171,7 +171,12 @@ function abrirModal(guia) {
         modalImg.src = "img/SirHenry.jpg";
         modalDescription.innerText = "Un hombre culto, meticuloso y profundamente comprometido con la idea de que la ley es la base del orden. Criado entre códices, archivos y consejos reales, aprendió desde joven que un sello puede valer más que una espada. De carácter reservado y voz pausada, observa el mundo con una mezcla de fascinación y melancolía, como si llevara sobre sus hombros el peso de siglos de historia. Aunque es un colonizador, no actúa por codicia, sino por una convicción casi sagrada: cree que sin documentos, juramentos y testigos, la civilización se desmorona. Porta una Biblia, símbolo de fe; una daga, como recordatorio de la fuerza; y un pergamino, emblema del contrato social. Para él, la conquista no es saqueo, sino organización. Aun así, vive un dilema moral: entre la misión de imponer orden y la creciente conciencia de los pueblos que ve silenciados por su propio deber.";
       }
-      else if (guia === 'guia4') {
+    else if (guia === 'guia4') {
+        modalTitle.innerText = "Xochilt Tlamati";
+        modalImg.src = "img/Lei.jpg";
+        modalDescription.innerText = 'Xochilt es esposa de un acaudalado intermediario de bienes y servicios, claramente no es ella la intermediaria ya que por supuesto desde los inicios de todas las profesiones, las mujeres casi nunca "podían". Gracias a ZACAZONTLIN el Dios exclusivo de los intermediarios del Imperio Azteca, hoy no sólo la rompen en todo lo que se proponen sino que las mujeres (en su mayoría) son quienes están pariendo la profesionalización del corretaje en la prestigiosa Universidad Nacional de Rosario, gracias a su histórica pasión por transmitir conocimiento.';
+      }
+      else if (guia === 'guia5') {
         modalTitle.innerText = "Damian";
         modalImg.src = "img/Damian.jpg";
         modalDescription.innerText = "Descripción detallada del Guía 4... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
