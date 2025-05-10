@@ -243,7 +243,7 @@
   }
   
   .bibliography-list li {
-    /* font-size: 16px; --> Usa el base de body o define var(--font-size-small) */
+    font-size: 16px; 
     color: var(--primary-color); /* Color del texto de la lista */
     padding: var(--padding-small);
     border-bottom: 1px solid var(--border-color-light);
@@ -652,7 +652,7 @@
        left: -20px; /* Ajustar posición del punto */
      }
     .bibliography-container{
-       max-width: none;
+       
        width: auto;
        margin-left: var(--padding-small);
        margin-right: var(--padding-small);

@@ -3,8 +3,8 @@ const eventos = [
     anio: "Sumeria",
     texto: `La antigua Sumeria, considerada la cuna de la civilización, fue una de las primeras sociedades en registrar formalmente las transacciones inmobiliarias. A través de tablillas de arcilla, los sumerios mantenían un sistema detallado para registrar la compra, venta y arrendamiento de tierras y propiedades. En esta época, la propiedad de la tierra no era un derecho individual absoluto, sino que estaba vinculada a la organización política y religiosa. Los acuerdos inmobiliarios eran fundamentales para el funcionamiento económico de la ciudad-estado, y los contratos se realizaban con el respaldo de autoridades locales o templos. La propiedad de la tierra era vista como un bien primordial que se transmitía a través de generaciones, y la primera forma de corretaje inmobiliario involucraba intermediarios que ayudaban a formalizar acuerdos.`,
     bibliografias: [
-  "Kramer, Samuel Noah. <b>History Begins at Sumer</b>. University of Pennsylvania Press, 1981.",
-  "Michalowski, Piotr. <b>The Correspondence of the Kings of Ur</b>. Penn State Press, 2006.",
+  "Kramer, Samuel Noah.<b>History Begins at Sumer</b>.University of Pennsylvania Press, 1981.",
+  "Michalowski, Piotr.<b>The Correspondence of the Kings of Ur</b>.Penn State Press, 2006.",
   "<a href='https://economiahistorica.com' target='_blank'>Economia Historica</a>",
   "<a href='https://terraeantiquae.blogia.com/2005/010101-la-ley-en-sumer-y-babilonia.php' target='_blank'>Terraeantiquae</a>",
   "<a href='https://es.m.wikipedia.org/wiki/Historia_de_las_instituciones_en_Mesopotamia' target='_blank'>Historia de las instituciones en Mesopotamia</a>",
@@ -278,7 +278,7 @@ function abrirModal(guia) {
     modalTitle.innerText = "Damian";
     modalImg.src = "img/Damian.jpg";
     modalDescription.innerHTML  =
-      "Descripción detallada del Guía 4... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
+      "Damian es un estudiante de primer año de la carrera Licenciatura en Corretaje Inmobiliario, llega cansado luego de sus primeros dias de clases intentando comprender para que sirve la materia de 'Principios del corretaje inmobiliario', pero entre tanto 'esfuerzo' se durmio y tuvo la visita de algunas personas historicas.";
   }
 
   modal.style.display = "block"; // Mostrar el modal
