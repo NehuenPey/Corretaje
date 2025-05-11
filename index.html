@@ -12,10 +12,7 @@
 <body>
   <header class="header">
     <h1>Línea Histórica del Corredor Inmobiliario</h1>
-
     <div class="controls">
-      <button id="btn-trivia" class="btn-trivia" onclick="location.href='trivia.html'">🎮 Jugar Trivia</button>
-      <!-- <button id="btn-trivia" class="btn-trivia" onclick="location.href='FPP.html'">FPP</button> -->
       <button id="increase-font" aria-label="Aumentar tamaño de Letra">Aumentar tamaño de Letra</button>
       <button id="reset-font" aria-label="Restablecer tamaño de Letra">Restablecer tamaño de Letra</button>
       <button id="decrease-font" aria-label="Disminuir tamaño de Letra">Disminuir tamaño de Letra</button>
@@ -33,19 +30,9 @@
       <iframe src="https://drive.google.com/file/d/1VVKHv68aZxssaWvJAsIvjkudNS6-iCjP/preview" width="440" height="280"
         allow="autoplay; fullscreen" allowfullscreen>
       </iframe>
-
     </div>
   </section>
-
-  <section class="container">
-    <h2>Línea Histórica</h2>
-    <div class="timeline-container">
-      <div class="timeline"></div>
-      <div id="timeline-events"></div>
-    </div>
-  </section>
-  
-  <hr>
+    <hr>
   <section id="conociendo-guías">
     <h2>Conociendonos</h2>
     <div class="guia-card" onclick="abrirModal('guia1')">
@@ -78,14 +65,31 @@
         </div> -->
   </section>
   <hr>
+  <section class="container">
+    <h2>Línea Histórica</h2>
+    <div class="timeline-container">
+      <div class="timeline"></div>
+      <div id="timeline-events"></div>
+    </div>
+  </section>
+  
+  <hr>
+<h3>¿Comprendiste todo lo que leiste y escuchaste? Ponlo a prueba con nuestra trivia.</h3>
+<img src="img/BichosTrivia.jpeg" alt="Jugar Trivia" style="width: 150px; height: 150px; vertical-align: middle; margin-right: 8px; border-radius: 10px;"><br><br>
+      <button id="btn-trivia" class="btn-trivia" onclick="location.href='trivia.html'">
+        Jugar Trivia
+      </button>
 
+  
+  <hr>
 
   <section class="container bibliography-container">
     <h2>Bibliografía General</h2>
     <p>Lista de fuentes utilizadas para la elaboración de esta línea histórica:</p>
     <ul id="bibliography-list" class="bibliography-list"></ul>
   </section>
-
+  
+  <hr>
 
   <section class="container">
     <h2>Integrantes del Grupo</h2>
@@ -101,7 +105,7 @@
         <p>Comisión 2</p>
       </div>
       <div class="member">
-        <img src="img/user-2935527_1280.webp" alt="Img3" loading="lazy">
+        <img src="img/Dam.jpg" alt="Img3" loading="lazy">
         <p>Damian Rios</p>
         <p>Comisión 1</p>
       </div>

@@ -584,18 +584,19 @@
       text-align: center;
     }
   
-    .controls {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin: 1rem auto;
-      max-width: 90%;
-    }
-  
-    .controls button {
-      padding: 0.6rem;
-      font-size: 0.9rem;
-    }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .controls button {
+    flex: 1 1 45%; /* Que ocupe hasta el 45% del ancho */
+    min-width: 140px; /* Evita que se achiquen demasiado */
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
   }
   @media (max-width: 600px) {
     #modal{
@@ -625,6 +626,7 @@
       right: 10px;
       font-size: 1.2rem;
     }
+
   }   
   
   /* Ajustes para teléfonos pequeños */
