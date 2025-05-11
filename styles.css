@@ -7,7 +7,7 @@
     --primary-color: #3E2723; /* Marrón oscuro principal (Footer BG, etc) */
     --header-bg: #5c2f1a;     /* Marrón un poco más claro (Header BG) */
     --text-light: #ffffff;
-    --text-dark: #131010;     /* Color de texto oscuro base */
+    --text-dark: #000000;     /* Color de texto oscuro base */
     --card-bg: #ffffff;
     --biblio-bg: #f8f1e7;
     --border-color-light: #d1bfa8;
