@@ -566,6 +566,7 @@
     .members {
       flex-wrap: wrap;
       justify-content: center;
+      display: flex;
       gap: 1rem;
     }
   
@@ -575,9 +576,9 @@
     }
   
     .member img {
-      width: 100%;
+      width: 50%;
       justify-content: center;
-      height: auto;
+      height: 50%;
     }
     .member p{
       text-align: center;
@@ -660,6 +661,12 @@
     .members {
        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Columnas más pequeñas */
        gap: var(--padding-small);
+    
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      gap: 1rem;
+    
     }
     .member img {
       width: 80px;
