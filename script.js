@@ -3,7 +3,7 @@ const eventos = [
     anio: "Sumeria",
     texto: `La antigua Sumeria, considerada la cuna de la civilización, fue una de las primeras sociedades en registrar formalmente las transacciones inmobiliarias. A través de tablillas de arcilla, los sumerios mantenían un sistema detallado para registrar la compra, venta y arrendamiento de tierras y propiedades. En esta época, la propiedad de la tierra no era un derecho individual absoluto, sino que estaba vinculada a la organización política y religiosa. Los acuerdos inmobiliarios eran fundamentales para el funcionamiento económico de la ciudad-estado, y los contratos se realizaban con el respaldo de autoridades locales o templos. La propiedad de la tierra era vista como un bien primordial que se transmitía a través de generaciones, y la primera forma de corretaje inmobiliario involucraba intermediarios que ayudaban a formalizar acuerdos.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
   "Kramer, Samuel Noah.<b>History Begins at Sumer</b>.University of Pennsylvania Press, 1981.",
   "Michalowski, Piotr.<b>The Correspondence of the Kings of Ur</b>.Penn State Press, 2006.",
   "<a href='https://economiahistorica.com' target='_blank'>Economia Historica</a>",
@@ -19,7 +19,7 @@ const eventos = [
     anio: "Egipto y Grecia",
     texto: `En el Egipto Antiguo, la propiedad de tierras estaba estrechamente vinculada al poder y la riqueza, especialmente en torno a los templos y las figuras religiosas. El faraón, considerado dueño de toda la tierra, otorgaba terrenos a las personas a cambio de impuestos y trabajo. Aunque el concepto de "corretaje inmobiliario" no existía en su forma moderna, las transacciones de tierras se realizaban principalmente entre los nobles y las clases altas, quienes gestionaban las propiedades y las heredaban. En el mundo griego, particularmente en Atenas, la propiedad de la tierra estaba muy valorada, y los contratos de compra-venta se realizaban en mercados abiertos, con la asistencia de un notario. La cidadanía estaba fuertemente ligada a la posesión de tierras, y los acuerdos inmobiliarios eran una forma de asegurar estatus social y poder. Aunque no existían agentes especializados como los actuales, el intercambio de tierras y propiedades se realizaba mediante la negociación directa entre las partes involucradas.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
     ],
   },
   {
@@ -69,7 +69,7 @@ const eventos = [
             reconocen la figura del corretaje y la mediación, sino también en el lenguaje: 
             términos como “subasta” o “intermediario” tienen su raíz en prácticas romanas. `,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
        'Artículo <a href="https://www.britannica.com/place/Sumer" target="_blank">"Mediación y mediadores en el tráfico jurídico romano"</a> de José Garrido Arredondo',
     ],
   },
@@ -77,7 +77,7 @@ const eventos = [
     anio: "Azteca",
     texto: `La civilización Azteca tenía un sistema de distribución de tierras bastante diferente al de las culturas occidentales. Aunque no existía el concepto de propiedad privada tal como lo conocemos hoy, la asignación de tierras a las familias era parte de un sistema centralizado. Los terrenos eran distribuidos por el gobierno central, y las personas que los trabajaban podían utilizarlos, pero no poseerlos de manera absoluta. En este sentido, el corretaje inmobiliario en el sentido moderno no existía, pero había ciertos intermediarios que ayudaban a organizar el uso de tierras para los distintos fines de la sociedad azteca. La gestión de estos recursos tenía un fuerte componente social y económico, pues las tierras cultivables eran un bien preciado que sostenía a la población. Los acuerdos relacionados con la transferencia de tierras entre distintas entidades, como las tribus y los gobernantes, se llevaban a cabo a través de registros específicos en códices, y el trueque era una práctica común.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
       'Anne Chapman, "Puertos de comercio en las civilizaciones Azteca y Maya" Barcelona, Labor Universitaria 1976, s-n'
      ,
 
@@ -91,7 +91,7 @@ const eventos = [
 
 `,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
       "<a href='https://en.wikipedia.org/wiki/Livery_of_seisin' target='_blank'>Livery of Seisin – Wikipedia</a>",
       "<a href='https://law.jrank.org/pages/8328/Livery-Seisin.html' target='_blank'>Livery of Seisin – Law JRank</a>",
       "<a href='https://www.cs.trinity.edu/rjensen/readings/history/forrester/a03codes.htm' target='_blank'>The Codification of Commercial Laws</a>",
@@ -104,14 +104,14 @@ const eventos = [
     anio: "Revolución industrial",
     texto: `La Revolución Industrial trajo consigo una transformación radical en la economía inmobiliaria. A medida que las ciudades crecían rápidamente debido al desarrollo de fábricas y la urbanización, las tierras y propiedades se convirtieron en un recurso muy demandado. La venta y el alquiler de propiedades industriales y residenciales se convirtió en una actividad común, y surgieron los primeros agentes inmobiliarios como intermediarios profesionales. Las transacciones inmobiliarias eran ahora más accesibles, y los contratos de compraventa se formalizaban mediante la intervención de notarios y abogados. Este período también marcó el comienzo del auge de los barrios obreros, donde las viviendas se construían rápidamente para albergar a los trabajadores de las fábricas. El corretaje inmobiliario en este contexto empezó a estructurarse de manera más formal, con el establecimiento de agencias dedicadas exclusivamente a la compra, venta y alquiler de propiedades.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
     ],
   },
   {
     anio: "México",
     texto: `El mercado inmobiliario en México ha experimentado una evolución interesante a lo largo de su historia. Desde la época colonial, donde la propiedad de la tierra estaba concentrada en manos de las instituciones religiosas y los grandes terratenientes, hasta la era moderna, donde la urbanización y el crecimiento de las ciudades han impulsado el sector inmobiliario. Después de la Revolución Mexicana, las reformas agrarias dieron lugar a la redistribución de tierras, lo que transformó el panorama de la propiedad en el país. En la actualidad, el corretaje inmobiliario en México es un sector competitivo que involucra tanto a agentes inmobiliarios tradicionales como a plataformas digitales. Las grandes ciudades, como Ciudad de México y Monterrey, se han convertido en focos de desarrollo inmobiliario, y las transacciones inmobiliarias se realizan a través de profesionales capacitados que gestionan desde pequeñas propiedades hasta grandes desarrollos comerciales.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
     ],
   },
   {
@@ -122,7 +122,7 @@ const eventos = [
     - <b>Ley Provincial 13.154</b>, que regula el ejercicio del corretaje inmobiliario en jurisdicciones provinciales, especificando derechos, deberes y funciones de los profesionales, además de la estructura institucional correspondiente.<br>
     Estas leyes han sido fundamentales para la profesionalización del sector en Argentina, promoviendo una actividad más transparente y confiable. En un contexto económico caracterizado por la inflación y la devaluación del peso, muchos argentinos optan por invertir en bienes inmuebles como forma de resguardar su capital. En este escenario, el corredor inmobiliario cumple un rol clave, brindando asesoramiento profesional dentro de un mercado influenciado por factores económicos, políticos y sociales.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra" ,
+      "'Antecedentes' material de la cátedra." ,
       "Código de Comercio",
       "Ley Nacional 20.266",
       "Ley Nacional 25.028",
