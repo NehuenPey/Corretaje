@@ -588,13 +588,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   .controls button {
     flex: 1 1 45%; /* Que ocupe hasta el 45% del ancho */
-    min-width: 140px; /* Evita que se achiquen demasiado */
-    font-size: 0.95rem;
+    min-width: 120px; /* Evita que se achiquen demasiado */
+    font-size: 0.85rem;
     padding: 0.5rem;
   }
   }
