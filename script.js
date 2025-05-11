@@ -269,7 +269,7 @@ function abrirModal(guia) {
     modalTitle.innerText = "Modalita";
     modalImg.src = "img/Domitila.jpg";
     modalDescription.innerHTML  =
-      "Descripción detallada del Guía 2... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe vitae explicabo obcaecati sint ea, veniam eveniet assumenda alias earum error esse id animi rerum? Aut, molestias. Quae nam maiores sunt?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi amet veritatis maxime unde animi in numquam ut laboriosam ullam nisi adipisci excepturi autem repudiandae, sapiente non nostrum suscipit beatae quo.";
+      "Domitila, agente en el Imperio Romano. Especializada en la venta y subasta de bienes confiscados, propiedades urbanas y botines de guerra. Con profundo conocimiento del mercado y una lengua afilada, se mueve entre los foros y puertos con autoridad y picardía. Es defensora del dominio legítimo y del valor de la tierra, Domitila representa el espíritu emprendedor y negociador de Roma, donde cada trato era casi un combate y cada contrato, una conquista";
   } else if (guia === "guia3") {
     modalTitle.innerText = "Sir Henry";
     modalImg.src = "img/SirHenry.jpg";
