@@ -112,6 +112,15 @@
     align-items: center;
     padding: var(--padding-large) 0;
   }
+  .timeline-container li {
+    border-bottom: none;
+    list-style: none;
+  }
+  .timeline-container li::before{
+    content: "📖";
+    margin-right: var(--padding-small);
+    font-size: 1.125rem; /* 18px */
+  }
   
   .timeline {
     width: 5px; /* Mantenido en px para línea fina */
