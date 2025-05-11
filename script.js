@@ -116,7 +116,11 @@ const eventos = [
   },
   {
     anio: "Actualidad en Argentina",
-    texto: `En Argentina, el corretaje inmobiliario es una actividad clave en la economía del país. Buenos Aires, Córdoba y Rosario son las ciudades más activas en términos de compra y venta de propiedades, tanto en el sector residencial como comercial. La profesionalización del corretaje inmobiliario ha avanzado, y ahora existen asociaciones y colegios que regulan las actividades de los agentes inmobiliarios. Las propiedades son vistas como una forma de inversión segura, y en un contexto de inflación y devaluación de la moneda, muchos argentinos han optado por adquirir propiedades para preservar su capital. El corretaje inmobiliario en Argentina está altamente influenciado por factores económicos, políticos y sociales, y los agentes inmobiliarios juegan un papel fundamental en guiar a los compradores e inversionistas a través de un mercado competitivo y fluctuante.`,
+    texto: `El corretaje inmobiliario en Argentina está regulado por un conjunto de leyes que definen el ejercicio profesional y aseguran su adecuada práctica. Entre las más importantes se encuentran:<br>
+    <li><b>Ley Nacional 20.266</b>, que establece los requisitos para ejercer profesiones liberales, incluyendo la obligación de contar con matrícula habilitante para los corredores inmobiliarios.</li>
+    <li><b>Ley Nacional 25.028</b>, que dispone la creación de colegios profesionales de corredores inmobiliarios, fortaleciendo el control, la ética y la formación continua dentro del sector.</li>
+    <li><b>Ley Provincial 13.154</b>, que regula el ejercicio del corretaje inmobiliario en jurisdicciones provinciales, especificando derechos, deberes y funciones de los profesionales, además de la estructura institucional correspondiente.</li><br>
+    Estas leyes han sido fundamentales para la profesionalización del sector en Argentina, promoviendo una actividad más transparente y confiable. En un contexto económico caracterizado por la inflación y la devaluación del peso, muchos argentinos optan por invertir en bienes inmuebles como forma de resguardar su capital. En este escenario, el corredor inmobiliario cumple un rol clave, brindando asesoramiento profesional dentro de un mercado influenciado por factores económicos, políticos y sociales.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra" ,
       "Código de Comercio",
