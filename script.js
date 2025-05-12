@@ -25,6 +25,9 @@ const eventos = [
     Finalmente, en el periodo tardío (664-332 a.C.), Egipto fue pionero en el uso de contratos escritos para las transacciones comerciales, lo que demuestra un avance significativo en la organización legal y económica del comercio. Esta evolución refleja cómo el intercambio de bienes fue fundamental para el desarrollo de la civilización egipcia y cómo surgieron figuras clave en la intermediación comercial, incluso en ausencia de un sistema formal de corredores como en Babilonia.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra." ,
+      "Trigger, B. G., Kemp, B. J., O'Connor, D., & Lloyd, A. B. (1983). Ancient Egypt: A Social History. Cambridge University Press.",
+      "Liverani, M. (2006). International Relations in the Ancient Near East, 1600–1100 BC. Palgrave Macmillan.",
+      "Morris, I. & Manning, J. G. (Eds.). (2005). The Ancient Economy: Evidence and Models. Stanford University Press."
     ],
   },
   {
@@ -125,9 +128,11 @@ const eventos = [
   },
   {
     anio: "México",
-    texto: `El mercado inmobiliario en México ha experimentado una evolución interesante a lo largo de su historia. Desde la época colonial, donde la propiedad de la tierra estaba concentrada en manos de las instituciones religiosas y los grandes terratenientes, hasta la era moderna, donde la urbanización y el crecimiento de las ciudades han impulsado el sector inmobiliario. Después de la Revolución Mexicana, las reformas agrarias dieron lugar a la redistribución de tierras, lo que transformó el panorama de la propiedad en el país. En la actualidad, el corretaje inmobiliario en México es un sector competitivo que involucra tanto a agentes inmobiliarios tradicionales como a plataformas digitales. Las grandes ciudades, como Ciudad de México y Monterrey, se han convertido en focos de desarrollo inmobiliario, y las transacciones inmobiliarias se realizan a través de profesionales capacitados que gestionan desde pequeñas propiedades hasta grandes desarrollos comerciales.`,
+    texto: `El corretaje inmobiliario en México vivió un punto de inflexión fundamental con la promulgación de la Ley Federal de Correduría Pública. Hasta ese momento, la actividad de los corredores públicos estaba regulada principalmente por el Código de Comercio, pero con limitaciones en cuanto a profesionalización, supervisión y requisitos de ingreso a la actividad.<br><br>La nueva ley no solo redefinió el rol del corredor público, sino que institucionalizó la figura como un profesional del derecho capacitado para dar fe pública en actos mercantiles, intervenir en operaciones inmobiliarias y asesorar en contratos con seguridad jurídica. Para ejercer legalmente, los aspirantes debían ser licenciados en Derecho, aprobar rigurosos exámenes y matricularse ante la Secretaría de Comercio y Fomento Industrial (SECOFI).<br><br>Este marco legal elevó los estándares del corretaje inmobiliario, garantizando mayor transparencia, confianza y formalidad en las transacciones. Además, la ley permitió al corredor actuar como árbitro en controversias comerciales, ampliando su campo de acción.<br><br>La reforma de 1992 marcó el inicio de una etapa de profesionalización y regulación más estricta, consolidando al corredor público como una figura clave en la vida jurídica y económica del país, especialmente en el ámbito de la propiedad y los contratos inmobiliarios.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra." ,
+      "Ley Federal de Correduría Pública - Diario Oficial de la Federación. (1992). Ley Federal de Correduría Pública. Publicada el 29 de diciembre de 1992. México: Secretaría de Gobernación.",
+      "López Velarde, J. (2013). El corredor público en México: evolución, funciones y retos actuales. Revista del Colegio de Notarios de México, Año 45, Núm. 217, pp. 25-34."
     ],
   },
   {
@@ -310,6 +315,11 @@ function abrirModal(guia) {
     modalImg.src = "img/Neucratis.jpg";
     modalDescription.innerHTML  =
       'Naucratis – Intérprete y Corredora del Nilo<br>En el año 3000 antes de Cristo, Naucratis fue una de las primeras figuras en actuar como intermediaria entre culturas. Hablaba egipcio antiguo, sumerio y lenguas comerciales del Mediterráneo. Su rol era esencial: conectaba comerciantes, nobles y escribas, negociando contratos y transmitiendo mensajes clave en los templos y mercados. Era conocida por su sabiduría y por evitar conflictos gracias a su habilidad para traducir no solo lenguas, sino también costumbres.<br>Su figura representa a los primeros corredores-intérpretes: los puentes humanos entre civilizaciones.';
+  }else if (guia === "guia6") {
+    modalTitle.innerText = "Carmela, la Defensora del Café y el Comercio.";
+    modalImg.src = "img/Carmela.jpg";
+    modalDescription.innerHTML  =
+      'Carmela es mucho más que una profesional: es la aliada incansable de los madrugones, las leyes comerciales y los desafíos cotidianos. Siempre lista con su agenda, su Código de Comercio y su inseparable taza de café, es símbolo de compromiso, ética y pasión. Con una sonrisa que ilumina cada jornada, recorre calles, explora cafeterías y defiende con firmeza el cumplimiento normativo.<br>Desde el corazón de México, inspira con cada paso y demuestra que el derecho también construye hogares y conecta historias. Como corredora inmobiliaria, une su vocación jurídica con una visión estratégica del mercado, guiando a cada cliente con empatía y profesionalismo.<br>Carmela representa a quienes lideran con valores, creen en el poder del conocimiento y abrazan su identidad con orgullo.<br><br>Su lema lo resume todo:<br><i>"La verdadera fuerza está en el conocimiento con propósito y el amor por lo que somos."</i>';
   }
 
   modal.style.display = "block"; // Mostrar el modal
