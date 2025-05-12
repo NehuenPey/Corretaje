@@ -98,7 +98,57 @@ const preguntas = [
       pregunta: "¿Qué artículo del Código de Vélez regula el corretaje?",
       opciones: ["Artículos 105 al 109", "Artículos 2085 al 2089", "Artículos 1501 al 1505", "Artículos 3000 al 3009"],
       respuesta: "Artículos 2085 al 2089"
-    }
+    }, //
+    {
+    pregunta: "¿Qué hecho marcó el inicio de la transformación del espacio en un recurso económico vital?",
+    opciones: ["La aparición del trueque entre nómadas", "La revolución agrícola (~10,000 a.C.)", "La invención de la escritura cuneiforme", "La creación de las primeras ciudades"],
+    respuesta: "La revolución agrícola (~10,000 a.C.)"
+  },
+  {
+    pregunta: "¿Cuál era el rol principal de los corredores-intérpretes en Sumeria?",
+    opciones: ["Administrar los templos y las tierras del rey", "Traducir textos legales al lenguaje popular", "Facilitar negociaciones entre comerciantes y extranjeros", "Organizar el comercio marítimo con Egipto"],
+    respuesta: "Facilitar negociaciones entre comerciantes y extranjeros"
+  },
+  {
+    pregunta: "¿Por qué el comercio en Egipto dependía principalmente del río Nilo?",
+    opciones: ["Porque era la única fuente de agua potable", "Porque conectaba el Mar Rojo con el Mediterráneo", "Porque facilitaba la circulación de productos entre regiones", "Porque los barcos no podían navegar el mar"],
+    respuesta: "Porque facilitaba la circulación de productos entre regiones"
+  },
+  {
+    pregunta: "¿Qué característica distingue el sistema de propiedad de tierras en el Imperio Azteca?",
+    opciones: ["Existencia de títulos individuales de propiedad", "Venta libre de parcelas entre clanes", "Gestión comunal a través de los calpulli", "Herencia directa por línea masculina"],
+    respuesta: "Gestión comunal a través de los calpulli"
+  },
+  {
+    pregunta: "¿Qué figura romana dio origen al término 'subasta'?",
+    opciones: ["Magister bonorum", "Proxeneta", "Sub asta vendicitio", "Curator rei publicae"],
+    respuesta: "Sub asta vendicitio"
+  },
+  {
+    pregunta: "¿Qué medida introdujo la monarquía castellana en el siglo XVI respecto a las tierras?",
+    opciones: ["Prohibición de ventas entre particulares", "Inscripción obligatoria en registros oficiales", "Liberación total del comercio de tierras", "Nacionalización de propiedades rurales"],
+    respuesta: "Inscripción obligatoria en registros oficiales"
+  },
+  {
+    pregunta: "¿Qué norma francesa reguló por primera vez el corretaje de forma formal?",
+    opciones: ["Código Napoleónico", "Digesto de Justiniano", "Ordonnance de Commerce (1673)", "Estatuto de París"],
+    respuesta: "Ordonnance de Commerce (1673)"
+  },
+  {
+    pregunta: "¿Qué fenómeno impulsó la aparición de agentes inmobiliarios profesionales durante la Revolución Industrial?",
+    opciones: ["La caída del feudalismo", "El auge del comercio marítimo", "La urbanización acelerada y crecimiento de ciudades", "La emancipación de los siervos"],
+    respuesta: "La urbanización acelerada y crecimiento de ciudades"
+  },
+  {
+    pregunta: "¿Qué transformación generaron las reformas agrarias tras la Revolución Mexicana?",
+    opciones: ["La creación de grandes latifundios", "La centralización de la propiedad estatal", "La redistribución de tierras", "La privatización de propiedades religiosas"],
+    respuesta: "La redistribución de tierras"
+  },
+  {
+    pregunta: "¿Qué ley nacional argentina establece los requisitos para ejercer como corredor inmobiliario?",
+    opciones: ["Ley 25.028", "Ley 13.154", "Ley 20.266", "Ley de Contratos Civiles"],
+    respuesta: "Ley 20.266"
+  }
   ];
 
   
