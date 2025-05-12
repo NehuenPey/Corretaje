@@ -111,9 +111,16 @@ const eventos = [
   },
   {
     anio: "Revolución industrial",
-    texto: `La Revolución Industrial trajo consigo una transformación radical en la economía inmobiliaria. A medida que las ciudades crecían rápidamente debido al desarrollo de fábricas y la urbanización, las tierras y propiedades se convirtieron en un recurso muy demandado. La venta y el alquiler de propiedades industriales y residenciales se convirtió en una actividad común, y surgieron los primeros agentes inmobiliarios como intermediarios profesionales. Las transacciones inmobiliarias eran ahora más accesibles, y los contratos de compraventa se formalizaban mediante la intervención de notarios y abogados. Este período también marcó el comienzo del auge de los barrios obreros, donde las viviendas se construían rápidamente para albergar a los trabajadores de las fábricas. El corretaje inmobiliario en este contexto empezó a estructurarse de manera más formal, con el establecimiento de agencias dedicadas exclusivamente a la compra, venta y alquiler de propiedades.`,
+    texto: `Entre finales del siglo XVIII y el XIX, la urbanización masiva impulsada por la Revolución Industrial llevó a una explosión de demanda de viviendas y fábricas en ciudades clave como Manchester, Londres, París y Nueva York. El crecimiento de las ciudades, motivado por la llegada de obreros para trabajar en las fábricas y la expansión de la industria, generó una necesidad urgente de gestionar el espacio urbano de manera eficiente.<br><br>
+    El corretaje inmobiliario emergió como una respuesta a esta necesidad: conectar a quienes buscaban propiedades con los nuevos centros de producción y crecimiento. Los agentes inmobiliarios empezaron a actuar como intermediarios profesionales, facilitando no solo ventas, sino también alquileres, especialmente en áreas industriales y en las zonas urbanas que se expandían rápidamente. A medida que la demanda de vivienda y locales comerciales crecía, los agentes inmobiliarios se convirtieron en piezas clave para organizar el mercado de bienes raíces.<br><br>
+    En este contexto, se comenzaron a publicar avisos en periódicos, y surgieron las primeras oficinas de bienes raíces, lo que permitió la formalización de un sector en expansión. Con ello, también nacieron prácticas como las comisiones sobre ventas, que incentivaban a los agentes a ser más eficientes en sus negociaciones.<br><br>
+    El desarrollo de códigos legales modernos, que proporcionaban normas claras sobre la propiedad y la transacción de bienes, ayudó a dar mayor seguridad jurídica a las transacciones. Este marco legal impulsó la confianza en el corretaje inmobiliario y permitió que la actividad se profesionalizara aún más.<br><br>
+    En medio del humo de las fábricas y el rugir de los trenes, el corretaje moderno se consolidó como una actividad estratégica, rápida y esencial para el crecimiento de las ciudades industriales. Este fenómeno también se extendió a América Latina, especialmente en México, donde el auge urbano y la transformación social trajeron consigo un mercado inmobiliario en expansión y la necesidad de agentes especializados que gestionaran las crecientes transacciones de bienes raíces.`,
     bibliografias: [
-      "'Antecedentes' material de la cátedra." ,
+      "'Antecedentes' material de la cátedra.",
+      "Harvey, D. (1989). The Urbanization of Capital: Studies in the History and Theory of Capitalist Urbanization. Oxford University Press.",
+      "Chudacoff, H. P. (2007). The Age of the City: The Growth of Urban Civilization in America. Harper & Row.",
+      "Harris, R. (1998). The Geography of Urban Transportation. The Guilford Press."
     ],
   },
   {
