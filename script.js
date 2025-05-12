@@ -283,7 +283,7 @@ function abrirModal(guia) {
       modalDescription.innerHTML  = 
   "Lupita, una arqueóloga que desde chiquita cambió la bicicleta por los libros viejos de su abuelo (¡seguro tenían olor a misterio!). Ahí le picó el bichito de las letras raras, en especial esas que parecen garabatos con clavos: la escritura cuneiforme.<br>" +
   "Lupita soñaba con desenterrar tablillas y descifrar qué contaban los antiguos mesopotámicos. En lugar de ir al parque, ella quería irse de excavación.<br>" +
-  "Y vaya que lo logró. De Rosario al desierto iraquí, Lupita se convirtió en la Indiana Jones de las letras cuneiformes, pero con más paciencia y menos látigo (¡aunque seguro alguna vez le dio un susto a algún escorpión con su cepillo de arqueóloga!).<br>s" +
+  "Y vaya que lo logró. De Rosario al desierto iraquí, Lupita se convirtió en la Indiana Jones de las letras cuneiformes, pero con más paciencia y menos látigo (¡aunque seguro alguna vez le dio un susto a algún escorpión con su cepillo de arqueóloga!).<br>" +
   "Ahora, ella desentierra secretos milenarios y los comparte. Así que ya sabes, si alguna vez encuentras una tablita llena de 'clavitos', ¡llama a Lupita!<br>" +
   "Además de amar Mesopotamia, Lupita tiene una frase favorita:<br>" +
   "<em>'Gracias por viajar al pasado conmigo porque conocer cómo empezó todo… nos ayuda a entender mejor lo que somos hoy.'</em><br>" +
