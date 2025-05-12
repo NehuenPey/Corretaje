@@ -297,7 +297,7 @@ function abrirModal(guia) {
     modalTitle.innerText = "Damian";
     modalImg.src = "img/Damian.jpg";
     modalDescription.innerHTML  =
-      "Damian es un estudiante de primer año de la carrera Licenciatura en Corretaje Inmobiliario, llega cansado luego de sus primeros dias de clases intentando comprender para que sirve la materia de 'Principios del corretaje inmobiliario', pero entre tanto 'esfuerzo' se durmio y tuvo la visita de algunas personas historicas.";
+      "Damián, estudiante de primer año de la Licenciatura en Corretaje Inmobiliario, regresa a casa exhausto después de sus primeros días de clases. Mientras intenta concentrarse en los apuntes de Principios del Corretaje Inmobiliario, se pregunta para qué sirve realmente esta materia, que le parece densa y difícil de conectar con la práctica. Con el cansancio pesando en sus párpados, se queda dormido sobre la mesa de estudio. En su sueño, se le aparecen varias figuras vestidas con ropas de distintas épocas, todas hablando sobre el valor de su oficio. Le cuentan cómo, a lo largo del tiempo, fue surgiendo la necesidad de personas que pudieran intermediar, dar confianza a las partes, conocer las leyes y el valor de los bienes. Le muestran que su futura profesión tiene raíces profundas. Al despertar, Damián siente que algo cambió: ahora comprende que no está comenzando cualquier carrera, sino una con historia y propósito.";
   }else if (guia === "guia2") {
     modalTitle.innerText = "Neucratis";
     modalImg.src = "img/Neucratis.jpg";
