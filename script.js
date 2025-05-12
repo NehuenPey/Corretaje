@@ -1,7 +1,9 @@
 const eventos = [
   {
     anio: "Sumeria",
-    texto: `La antigua Sumeria, considerada la cuna de la civilización, fue una de las primeras sociedades en registrar formalmente las transacciones inmobiliarias. A través de tablillas de arcilla, los sumerios mantenían un sistema detallado para registrar la compra, venta y arrendamiento de tierras y propiedades. En esta época, la propiedad de la tierra no era un derecho individual absoluto, sino que estaba vinculada a la organización política y religiosa. Los acuerdos inmobiliarios eran fundamentales para el funcionamiento económico de la ciudad-estado, y los contratos se realizaban con el respaldo de autoridades locales o templos. La propiedad de la tierra era vista como un bien primordial que se transmitía a través de generaciones, y la primera forma de corretaje inmobiliario involucraba intermediarios que ayudaban a formalizar acuerdos.`,
+    texto: `Desde la Prehistoria, los humanos desarrollaron un sentido de pertenencia hacia los territorios que habitaban. Aunque inicialmente eran nómadas, frecuentaban ciertos refugios, lo que sentó las bases del concepto de propiedad. Con la revolución agrícola (alrededor del 10,000 a.C.), comenzaron a establecerse en tierras fértiles, transformando el espacio en un recurso económico vital. El trigo, por su valor nutritivo y facilidad de almacenamiento, se convirtió en el principal motor del comercio primitivo.<br><br>
+    La necesidad de intercambiar excedentes agrícolas impulsó el surgimiento de los mercados y del comercio marítimo. Aquí surgió la figura del corredor-intérprete, quien facilitaba la comunicación y negociación entre agricultores y pueblos nómadas o comerciantes extranjeros. Estos intermediarios eran esenciales en puertos y mercados, actuando como traductores y negociadores.<br><br>
+    En Sumeria, la primera civilización histórica, la tierra estaba controlada por el rey, los templos y los ciudadanos libres. No existía propiedad privada moderna, pero sí contratos de arrendamiento, préstamos y cesiones, registrados en tablillas de arcilla gracias a la escritura cuneiforme. Además, Sumeria mantenía un comercio activo con otras civilizaciones. En este contexto, los corredores-intérpretes también gestionaban espacios para el comercio, ampliando la economía y convirtiendo a Sumeria en un centro comercial internacional.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra." ,
   "Kramer, Samuel Noah.<b>History Begins at Sumer</b>.University of Pennsylvania Press, 1981.",
@@ -17,7 +19,10 @@ const eventos = [
   },
   {
     anio: "Egipto y Grecia",
-    texto: `En el Egipto Antiguo, la propiedad de tierras estaba estrechamente vinculada al poder y la riqueza, especialmente en torno a los templos y las figuras religiosas. El faraón, considerado dueño de toda la tierra, otorgaba terrenos a las personas a cambio de impuestos y trabajo. Aunque el concepto de "corretaje inmobiliario" no existía en su forma moderna, las transacciones de tierras se realizaban principalmente entre los nobles y las clases altas, quienes gestionaban las propiedades y las heredaban. En el mundo griego, particularmente en Atenas, la propiedad de la tierra estaba muy valorada, y los contratos de compra-venta se realizaban en mercados abiertos, con la asistencia de un notario. La cidadanía estaba fuertemente ligada a la posesión de tierras, y los acuerdos inmobiliarios eran una forma de asegurar estatus social y poder. Aunque no existían agentes especializados como los actuales, el intercambio de tierras y propiedades se realizaba mediante la negociación directa entre las partes involucradas.`,
+    texto: `En el Antiguo Egipto, toda la tierra pertenecía formalmente al Faraón, quien tenía el poder exclusivo de asignarla a nobles, sacerdotes y funcionarios. A diferencia de Babilonia, donde la compraventa de tierras estaba regulada y los corredores jugaban un rol importante, en Egipto la tierra se concedía para su uso y herencia, pero no podía venderse ni dividirse sin autorización real. No obstante, ambas civilizaciones compartían una intensa actividad comercial, especialmente a través de puertos que conectaban el Mediterráneo con Mesopotamia y el Valle del Indo.<br><br>
+    El comercio egipcio dependía en gran medida del río Nilo, que servía como vía principal de transporte y permitía la circulación de productos entre regiones. Los comerciantes extranjeros necesitaban intermediarios locales que facilitaran las negociaciones, especialmente por las diferencias de idioma y cultura.<br><br>
+    Desde el Reino Antiguo (2686-2181 a.C.), Egipto estableció rutas comerciales con Nubia y el Levante. En el Reino Medio (2055-1650 a.C.), los puertos se convirtieron en puntos estratégicos para el intercambio con mercaderes extranjeros, y surgieron intermediarios especializados. Durante el Reino Nuevo (1550-1070 a.C.), el país vivió su apogeo económico y territorial, consolidando un comercio más estructurado con otras civilizaciones del Mediterráneo y Cercano Oriente. En este periodo, los templos gestionaban las tierras y la producción de bienes.<br><br>
+    Finalmente, en el periodo tardío (664-332 a.C.), Egipto fue pionero en el uso de contratos escritos para las transacciones comerciales, lo que demuestra un avance significativo en la organización legal y económica del comercio. Esta evolución refleja cómo el intercambio de bienes fue fundamental para el desarrollo de la civilización egipcia y cómo surgieron figuras clave en la intermediación comercial, incluso en ausencia de un sistema formal de corredores como en Babilonia.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra." ,
     ],
@@ -75,7 +80,11 @@ const eventos = [
   },
   {
     anio: "Azteca",
-    texto: `La civilización Azteca tenía un sistema de distribución de tierras bastante diferente al de las culturas occidentales. Aunque no existía el concepto de propiedad privada tal como lo conocemos hoy, la asignación de tierras a las familias era parte de un sistema centralizado. Los terrenos eran distribuidos por el gobierno central, y las personas que los trabajaban podían utilizarlos, pero no poseerlos de manera absoluta. En este sentido, el corretaje inmobiliario en el sentido moderno no existía, pero había ciertos intermediarios que ayudaban a organizar el uso de tierras para los distintos fines de la sociedad azteca. La gestión de estos recursos tenía un fuerte componente social y económico, pues las tierras cultivables eran un bien preciado que sostenía a la población. Los acuerdos relacionados con la transferencia de tierras entre distintas entidades, como las tribus y los gobernantes, se llevaban a cabo a través de registros específicos en códices, y el trueque era una práctica común.`,
+    texto: `En el Imperio Azteca, la tierra no era propiedad privada, sino parte de un sistema colectivo gestionado por los <i>calpulli</i> (barrios o clanes). Cada familia recibía una parcela para trabajarla, pero no podía venderla ni heredarse fuera del clan. Si dejaba de cultivarla, la tierra regresaba a la comunidad. La asignación y supervisión de las tierras estaban a cargo de los líderes del <i>calpulli</i>, quienes también mediaban en disputas por el uso del suelo.<br><br>
+    El acceso a la tierra estaba ligado al matrimonio, considerado esencial para la estabilidad y productividad del sistema comunal. Solo las familias formadas por matrimonios podían recibir tierras; quienes no se casaban eran excluidos de la comunidad. Este requisito reflejaba la importancia del núcleo familiar como base del sistema agrícola y social.<br><br>
+    El tipo de propiedad más común era la tierra <i>calpulli</i>, de carácter comunal. Además de los líderes locales, otras figuras desempeñaban roles clave en la organización social: los <i>calpixques</i>, recaudadores de tributos, actuaban como intermediarios entre el gobierno y los agricultores, asegurando el cumplimiento de obligaciones fiscales; los <i>tecutlis</i>, jueces locales, resolvían conflictos de tierras; y los <i>pochtecas</i>, comerciantes de élite, facilitaban el comercio exterior y actuaban como mediadores en negociaciones con otros pueblos.<br><br>
+    La agricultura fue la base de la economía azteca, con un sistema avanzado de <i>chinampas</i>, islas flotantes que permitían varias cosechas anuales. Los principales cultivos incluían maíz, frijol, calabaza y chile, complementados con tomate, cacao y maguey. Sin ganadería, la dieta se completaba con pesca y caza.<br><br>
+    El comercio también fue vital. Los <i>pochtecas</i> y los intérpretes jugaron un papel crucial en la integración económica, permitiendo el intercambio entre pueblos diversos. En conjunto, la tierra, el matrimonio, la agricultura y la mediación fueron pilares fundamentales de la organización azteca.`,
     bibliografias: [
       "'Antecedentes' material de la cátedra." ,
       'Anne Chapman, "Puertos de comercio en las civilizaciones Azteca y Maya" Barcelona, Labor Universitaria 1976, s-n'
@@ -269,12 +278,12 @@ function abrirModal(guia) {
   "📖 Podés ver más sobre su historia en <a href='https://heyzine.com/flip-book/55f2a5855b.html' target='_blank' rel='noopener noreferrer'>aqui</a>.";
 
 
-  } else if (guia === "guia2") {
+  } else if (guia === "guia3") {
     modalTitle.innerText = "Modalita";
     modalImg.src = "img/Domitila.jpg";
     modalDescription.innerHTML  =
       "Domitila, agente en el Imperio Romano. Especializada en la venta y subasta de bienes confiscados, propiedades urbanas y botines de guerra. Con profundo conocimiento del mercado y una lengua afilada, se mueve entre los foros y puertos con autoridad y picardía. Es defensora del dominio legítimo y del valor de la tierra, Domitila representa el espíritu emprendedor y negociador de Roma, donde cada trato era casi un combate y cada contrato, una conquista";
-  } else if (guia === "guia3") {
+  } else if (guia === "guia5") {
     modalTitle.innerText = "Sir Henry";
     modalImg.src = "img/SirHenry.jpg";
     modalDescription.innerHTML  =
@@ -284,11 +293,16 @@ function abrirModal(guia) {
     modalImg.src = "img/Lei.jpg";
     modalDescription.innerHTML  =
       'Xochilt es esposa de un acaudalado intermediario de bienes y servicios, claramente no es ella la intermediaria ya que por supuesto desde los inicios de todas las profesiones, las mujeres casi nunca "podían". Gracias a ZACAZONTLIN el Dios exclusivo de los intermediarios del Imperio Azteca, hoy no sólo la rompen en todo lo que se proponen sino que las mujeres (en su mayoría) son quienes están pariendo la profesionalización del corretaje en la prestigiosa Universidad Nacional de Rosario, gracias a su histórica pasión por transmitir conocimiento.';
-  } else if (guia === "guia5") {
+  } else if (guia === "guia7") {
     modalTitle.innerText = "Damian";
     modalImg.src = "img/Damian.jpg";
     modalDescription.innerHTML  =
       "Damian es un estudiante de primer año de la carrera Licenciatura en Corretaje Inmobiliario, llega cansado luego de sus primeros dias de clases intentando comprender para que sirve la materia de 'Principios del corretaje inmobiliario', pero entre tanto 'esfuerzo' se durmio y tuvo la visita de algunas personas historicas.";
+  }else if (guia === "guia2") {
+    modalTitle.innerText = "Neucratis";
+    modalImg.src = "img/Neucratis.jpg";
+    modalDescription.innerHTML  =
+      'Naucratis – Intérprete y Corredora del Nilo<br>En el año 3000 antes de Cristo, Naucratis fue una de las primeras figuras en actuar como intermediaria entre culturas. Hablaba egipcio antiguo, sumerio y lenguas comerciales del Mediterráneo. Su rol era esencial: conectaba comerciantes, nobles y escribas, negociando contratos y transmitiendo mensajes clave en los templos y mercados. Era conocida por su sabiduría y por evitar conflictos gracias a su habilidad para traducir no solo lenguas, sino también costumbres.<br>Su figura representa a los primeros corredores-intérpretes: los puentes humanos entre civilizaciones.';
   }
 
   modal.style.display = "block"; // Mostrar el modal
