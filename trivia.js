@@ -174,7 +174,7 @@ const preguntas = [
   function mostrarPregunta() {
     const actual = preguntasSeleccionadas[indiceActual];
     document.getElementById("textoPregunta").textContent = actual.pregunta;
-  
+  document.getElementById("progreso").textContent = `Pregunta ${indiceActual + 1} de ${preguntasSeleccionadas.length}`;
     const opcionesContenedor = document.getElementById("opciones-container");
     opcionesContenedor.innerHTML = "";
   

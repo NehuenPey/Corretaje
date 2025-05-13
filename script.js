@@ -195,19 +195,19 @@ function renderizarEventos() {
   });
 }
 
-function renderizarBibliografias() {
-  const todas = new Set();
+// function renderizarBibliografias() { //
+//   const todas = new Set();
 
-  eventos.forEach((evento) => {
-    evento.bibliografias.forEach((biblio) => todas.add(biblio));
-  });
+//   eventos.forEach((evento) => {
+//     evento.bibliografias.forEach((biblio) => todas.add(biblio));
+//   });
 
-  todas.forEach((biblio) => {
-    const li = document.createElement("li");
-    li.innerHTML = biblio;
-    bibliographySection.appendChild(li);
-  });
-}
+//   todas.forEach((biblio) => {
+//     const li = document.createElement("li");
+//     li.innerHTML = biblio; 
+//     bibliographySection.appendChild(li);
+//   });
+// }
 
 function revealOnScroll() {
   const elements = document.querySelectorAll(".event");
@@ -244,7 +244,7 @@ function configurarAccesibilidad() {
   const maxSize = 40;
 
   const aplicarTamañoFuente = () => {
-    document.body.style.fontSize = `${fontSize}px`;
+    document.documentElement.style.setProperty('--base-font-size', `${fontSize}px`);
     localStorage.setItem("fontSize", fontSize);
   };
 
@@ -269,6 +269,7 @@ function configurarAccesibilidad() {
 
   aplicarTamañoFuente();
 }
+
 function abrirModal(guia) {
   const modal = document.getElementById("modal");
   const modalTitle = document.getElementById("modal-title");
