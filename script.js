@@ -195,20 +195,6 @@ function renderizarEventos() {
   });
 }
 
-// function renderizarBibliografias() { //
-//   const todas = new Set();
-
-//   eventos.forEach((evento) => {
-//     evento.bibliografias.forEach((biblio) => todas.add(biblio));
-//   });
-
-//   todas.forEach((biblio) => {
-//     const li = document.createElement("li");
-//     li.innerHTML = biblio; 
-//     bibliographySection.appendChild(li);
-//   });
-// }
-
 function revealOnScroll() {
   const elements = document.querySelectorAll(".event");
   const windowHeight = window.innerHeight;
@@ -242,16 +228,18 @@ function configurarAccesibilidad() {
   let fontSize = parseInt(localStorage.getItem("fontSize")) || 16;
   const minSize = 12;
   const maxSize = 40;
-
+console.log("⚙️ configurarAccesibilidad arrancó");
   const aplicarTamañoFuente = () => {
     document.documentElement.style.setProperty('--base-font-size', `${fontSize}px`);
     localStorage.setItem("fontSize", fontSize);
+    console.log("⚙️ configurarAccesibilidad arrancó");
   };
 
   increaseBtn.addEventListener("click", () => {
     if (fontSize < maxSize) {
       fontSize += 2;
       aplicarTamañoFuente();
+      console.log("⚙️ configurarAccesibilidad arrancó");
     }
   });
 
@@ -259,6 +247,7 @@ function configurarAccesibilidad() {
     if (fontSize > minSize) {
       fontSize -= 2;
       aplicarTamañoFuente();
+      console.log("⚙️ configurarAccesibilidad arrancó");
     }
   });
 
@@ -347,7 +336,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   renderizarEventos();
-  renderizarBibliografias();
   configurarAccesibilidad();
   revealOnScroll(); // Mostrar al cargar
 });

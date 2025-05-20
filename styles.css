@@ -36,7 +36,7 @@
     --font-serif: 'Georgia', serif;
   
     /* --- Tamaños y Espaciados --- */
-    --base-font-size: 1rem; /* = 16px por defecto (Controlado por JS) */
+    /*--base-font-size: 1rem;  = 16px por defecto (Controlado por JS) */
     --h1-font-size: 2rem;
     --h2-font-size: 1.5rem;
     --padding-small: 0.625rem; /* 10px */
@@ -45,7 +45,7 @@
     --border-radius-small: 5px;
     --border-radius-medium: 10px;
   }
-  
+
   body {
     font-family: var(--font-sans);
     font-size: var(--base-font-size); /* Controlado por JS ahora */
