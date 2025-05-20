@@ -82,6 +82,31 @@ body {
     font-size: 0.9rem;
   }
 }
+.dark-mode body {
+  background: linear-gradient(to bottom, #1a1a1a, #333);
+  color: #eee;
+}
+
+.dark-mode .trivia-box {
+  background-color: rgba(30, 30, 30, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  color: #eee;
+}
+
+.dark-mode .grid-opciones button {
+  background-color: #444;
+  color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .grid-opciones button:hover {
+  background-color: #555;
+}
+
+.dark-mode .btn {
+  background-color: #8b5e00;
+  color: #fff;
+}
 
 /* Tablets (≥600px) */
 @media (min-width: 600px) {

@@ -356,7 +356,16 @@
   }
   .alto-contraste .modal {
     background: var(--accent-color);
+    color: var(--text-light);
+    background-color: var(--hc-card-bg);
 }
+  .alto-contraste .modal-content{
+     color: var(--text-light);
+      background-color: var(--hc-card-bg);
+  }
+  .alto-contraste #mod{
+    color: var(--text-light);
+  }
 
 /* Aumenta el contraste de la imagen del modal si es necesario */
   .alto-contraste .modal img {

@@ -229,7 +229,6 @@ const preguntas = [
     } else if (puntaje === 10) {
       gifRuta = "img/10.gif";
     }
-    
 
   gifContenedor.innerHTML = `<img src="${gifRuta}" alt="Resultado" style="max-width: 100%; height: auto;">`;
   console.log("Ruta del gif seleccionada:", gifRuta);
