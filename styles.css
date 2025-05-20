@@ -366,6 +366,20 @@
   .alto-contraste #mod{
     color: var(--text-light);
   }
+  .alto-contraste a{
+    color: rgb(206, 206, 100)
+  }
+  .alto-contraste a:hover{
+    outline: none
+  }
+  a{
+    outline: none;
+  text-decoration: none;
+  }
+  a:visited {
+  text-decoration: none;
+  outline: none;
+}
 
 /* Aumenta el contraste de la imagen del modal si es necesario */
   .alto-contraste .modal img {
